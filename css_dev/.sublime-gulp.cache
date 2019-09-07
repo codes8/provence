@@ -1,0 +1,1 @@
+{"D:\\Works\\GitHub\\Provence\\css_dev\\gulpfile.js":{"sha1":"a0724ba99478c7c3beb836e2bbe50b11f7b0cedb","tasks":{"sass":{"name":"sass","dependencies":""},"extend":{"name":"extend","dependencies":""},"watch":{"name":"watch","dependencies":""},"default":{"name":"default","dependencies":"watch"}}}}

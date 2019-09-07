@@ -1,0 +1,144 @@
+@charset "UTF-8";
+// ========================================================== */
+// file   : header.scss
+// wirter : Ryu
+// date   : 20190901
+// ========================================================== */
+/* ---------------------------------------------------------- */
+/* header s ================================================= */
+.header {
+	position:relative;
+	float:left;
+	width:100%;
+	@include media-screen {
+		height:$mo_header_h;
+	}
+	.lng_menu {
+		float:left;
+		margin-top:35px;
+		@include media-screen {
+			margin-top:10px;
+			margin-left:10px;
+		}
+		li {
+			display:inline-block;
+			margin-right:6px;
+			a {
+				display:block;
+				padding-left:23px;
+				height:10px;
+				line-height:10px;
+				font-weight:$fwB;
+				font-size:11px;
+				color:$light_black;
+				&:hover {color:$point_clr;}
+			}
+		}
+		.lng_eng a {
+			background:url("#{$img_url}#{$img_common_url}icon_flag_eng.gif") no-repeat;
+		}
+		.lng_chn a {
+			background:url("#{$img_url}#{$img_common_url}icon_flag_chn.gif") no-repeat;}
+		.lng_kor a {
+			background:url("#{$img_url}#{$img_common_url}icon_flag_kor.gif") no-repeat;
+		}
+	}
+	.logo_top {
+		position:absolute;
+		top:25px;
+		left:50%;
+		margin-left:-83px;
+		width:166px;
+		img {
+			width:100%;
+		}
+		@include media-screen {
+			top:13px;
+			width:124px;
+			margin-left:-62px;
+		}
+	}
+	.sns_menu {
+		float:right;
+		margin-top:35px;
+		margin-bottom:25px;
+		@include media-screen {
+			display:none;
+		}
+		li {
+			float:left;
+			margin-left:3px;
+			width:30px;
+			height:30px;
+			@include txt_idt();
+			
+			a {
+				display:block;
+				width:100%;
+				height:100%;
+				background:url("#{$img_url}#{$img_common_url}icon_top_sns.jpg");
+				&:hover {
+					background:url("#{$img_url}#{$img_common_url}icon_top_sns_over.jpg");
+				}
+			}
+		}
+		.sns_facebook a,
+		.sns_facebook a:hover {
+			@include bg-pst(0, 0);
+		}
+		.sns_blog a,
+		.sns_blog a:hover {
+			@include bg-pst(30px, 0);
+		}
+		.sns_instagram a,
+		.sns_instagram a:hover {
+			@include bg-pst(63px, 0);
+		}
+		.sns_youtube a,
+		.sns_youtube a:hover {
+			@include bg-pst(96px, 0);
+		}
+	}
+
+	.sns_menu_dummy {
+		display:none;
+		float:left;
+		margin-top:200px;
+		margin-bottom:$con_pd2;
+		margin-left:$con_pd2;
+		@include media-screen {
+			display:block;
+		}
+		li {
+			float:left;
+			margin-right:4px;
+			width:47px;
+			height:47px;
+			@include txt_idt();
+			a {
+				display:block;
+				width:100%;
+				height:100%;
+				background:url("#{$img_url}#{$img_common_url}icon_top_sns_m_over.jpg");
+			}
+		}
+		.sns_facebook a,
+		.sns_facebook a:hover {
+			@include bg-pst(0, 0);
+		}
+		.sns_blog a,
+		.sns_blog a:hover {
+			@include bg-pst(47px, 0);
+		}
+		.sns_instagram a,
+		.sns_instagram a:hover {
+			@include bg-pst(98px, 0);
+		}
+		.sns_youtube a,
+		.sns_youtube a:hover {
+			@include bg-pst(148px, 0);
+		}
+	}
+}
+/* header e ================================================= */
+/* ---------------------------------------------------------- */

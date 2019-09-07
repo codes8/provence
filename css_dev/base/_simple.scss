@@ -1,0 +1,117 @@
+@charset "UTF-8";
+// ========================================================== */
+// file : simple.scss
+// wirter : Ryu 
+// date : 20190901
+// ========================================================== */
+/* ---------------------------------------------------------- */
+/* simple s ================================================= */
+
+/* position */
+.pstS {position:static !important;}
+.pstR {position:relative !important;}
+.pstA {position:absolute !important;}
+.pstF {position:fixed !important;}
+
+/* float */
+.fL {float:left !important;}
+.fR {float:right !important;}
+.fN {float:none !important;}
+.cB {clear:both !important;}
+
+/* display */
+.dN {display:none !important;}
+.dB {display:block !important;}
+.dIB {display:inline-block !important;}
+.dI {display:inline !important;}
+
+/* margin */
+@for $step_size from 0 through 100 {
+	.mt#{$step_size} {margin-top:#{$step_size}px !important;}
+	.mr#{$step_size} {margin-right:#{$step_size}px !important;}
+	.mb#{$step_size} {margin-bottom:#{$step_size}px !important;}
+	.ml#{$step_size} {margin-left:#{$step_size}px !important;}
+}
+
+/* padding */
+@for $step_size from 0 through 100 {
+	.pt#{$step_size} {padding-top:#{$step_size}px !important;}
+	.pr#{$step_size} {padding-right:#{$step_size}px !important;}
+	.pb#{$step_size} {padding-bottom:#{$step_size}px !important;}
+	.pl#{$step_size} {padding-left:#{$step_size}px !important;}
+}
+
+/* border */
+.testBorer {border:1px solid red !important;}
+.bd0 {border:0;}
+.bd1s333 {border:1px solid #333 !important;}
+.bd1s666 {border:1px solid #666 !important;}
+.bd1s999 {border:1px solid #999 !important;}
+.bd1sAAA {border:1px solid #aaa !important;}
+.bd1sBBB {border:1px solid #bbb !important;}
+.bd1sCCC {border:1px solid #ccc !important;}
+.bd1sDDD {border:1px solid #ddd !important;}
+.bd1sEEE {border:1px solid #eee !important;}
+.bd1sFFF {border:1px solid #fff !important;}
+
+/* font-weight */
+.fwN {font-weight:normal !important;}
+.fwB {font-weight:bold !important;}
+
+/* font | em */
+.fs08e {font-size:0.8em !important;}
+.fs10e {font-size:1em !important;}
+.fs12e {font-size:1.2em !important;}
+.fs14e {font-size:1.4em !important;}
+.fs16e {font-size:1.6em !important;}
+.fs18e {font-size:1.8em !important;}
+.fs20e {font-size:2em !important;}
+
+/* font | px */
+.fs10x {font-size:10px !important;}
+.fs12x {font-size:12px !important;}
+.fs14x {font-size:14px !important;}
+.fs16x {font-size:16px !important;}
+.fs18x {font-size:18px !important;}
+.fs20x {font-size:20px !important;}
+
+/* color */
+.clr33 {color:#333 !important;}
+.clr66 {color:#666 !important;}
+.clr99 {color:#999 !important;}
+.clrAA {color:#aaa !important;}
+.clrBB {color:#bbb !important;}
+.clrCC {color:#ccc !important;}
+.clrDD {color:#ddd !important;}
+.clrEE {color:#eee !important;}
+.clrFF {color:#fff !important;}
+.clr7B {color:#7b7b7b !important;}
+
+/* text-align */
+.taL {text-align:left !important;}
+.taC {text-align:center !important;}
+.taR {text-align:right !important;}
+
+/* vertical-align */
+.va_t {vertical-align: top !important;}
+.va_m {vertical-align: middle !important;}
+.bdn {border: none !important;}
+
+/* cursor */
+.crsrC {cursor:crosshair !important;}
+.crsrP {cursor:pointer !important;}
+.crsrM {cursor:move !important;}
+.crsrW {cursor:wait !important;}
+.crsrD {cursor:default !important;}
+.crsrT {cursor:text !important;}
+
+/* overflow */
+.ofV {overflow:visible !important;}
+.ofH {overflow:hidden !important;}
+.ofS {overflow:scroll !important;}
+.ofA {overflow:auto !important;}
+.tofC {text-overflow:clip !important;}
+.tofE {text-overflow:ellipsis !important;}
+
+/* simple e ================================================= */
+/* ---------------------------------------------------------- */

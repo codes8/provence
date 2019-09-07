@@ -1,0 +1,63 @@
+@charset "UTF-8";
+// ========================================================== */
+// file   : font.scss
+// wirter : Ryu
+// date   : 20190901
+// ========================================================== */
+/* ---------------------------------------------------------- */
+/* font s =================================================== */
+//@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Nanum+Gothic:400,700,800|Nanum+Myeongjo:400,700,800&display=swap');
+
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('fonts/NanumSquareL.eot');
+  src: url('fonts/NanumSquareL.woff2') format('woff2'),
+       url('fonts/NanumSquareL.woff') format('woff'),
+       url('fonts/NanumSquareL.ttf') format('truetype'),
+       url('fonts/NanumSquareL.eot?#iefix') format('embedded-opentype');
+  font-weight: 300;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('fonts/NanumSquareR.eot');
+  src: url('fonts/NanumSquareR.woff2') format('woff2'),
+       url('fonts/NanumSquareR.woff') format('woff'),
+       url('fonts/NanumSquareR.ttf') format('truetype'),
+       url('fonts/NanumSquareR.eot?#iefix') format('embedded-opentype');
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('fonts/NanumSquareB.eot');
+  src: url('fonts/NanumSquareB.woff2') format('woff2'),
+       url('fonts/NanumSquareB.woff') format('woff'),
+       url('fonts/NanumSquareB.ttf') format('truetype'),
+       url('fonts/NanumSquareB.eot?#iefix') format('embedded-opentype');
+  font-weight: 700;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('fonts/NanumSquareEB.eot');
+  src: url('fonts/NanumSquareEB.woff2') format('woff2'),
+       url('fonts/NanumSquareEB.woff') format('woff'),
+       url('fonts/NanumSquareEB.ttf') format('truetype'),
+       url('fonts/NanumSquareEB.eot?#iefix') format('embedded-opentype');
+  font-weight: 800;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* font e =================================================== */
+/* ---------------------------------------------------------- */

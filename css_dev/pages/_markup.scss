@@ -1,0 +1,188 @@
+@charset "UTF-8";
+// ========================================================== */
+// file   : mypage.scss
+// wirter : Ryu
+// date   : 20190901
+// ========================================================== */
+/* ---------------------------------------------------------- */
+/* mypage s ================================================= */
+.markup_list_wrap {
+	position:relative;
+	min-width:320px;
+	padding:0 $con_pd ($con_pd * 2);
+	font-size:1.4em;
+	.markup_list_top {
+		position:relative;
+		padding:$con_pd 0;
+		@include media-screen {
+			position:fixed;
+			top:0;
+			left:0;
+			padding:0 $con_pd;
+			width:100%;
+			height:75px;
+			background:#fff;
+			z-index:1;
+			border-bottom:1px solid $border_clr;
+		}
+		h1 {
+			float:left;
+			margin-top:25px;
+			color:#333;
+			font-weight:800;
+			font-size:34px;
+			@include media-screen {
+				float:right;
+				font-size:24px;
+			}
+		}
+		img {
+			position:absolute;
+			top:20px;
+			left:50%;
+			margin-left:-83px;
+			@include media-screen {
+				top:$con_mg;
+				left:$con_pd;
+				margin-left:0;
+			}
+		}
+	}
+	.markup_list_mid {
+		padding-bottom:40px;
+		@include media-screen {
+			padding-top:70px;
+		}
+	}
+	.markup_list_btm {
+		position:absolute;
+		left:0;
+		bottom:0;
+		padding:20px 0 18px;
+		width:100%;
+		font-weight:$fwL;
+		font-size:14px;
+		color:#eee;
+		text-align:center;
+		background:#333;
+		b {
+			color:$point_clr;
+		}
+		.copy_t {
+			font-size:11px;
+		}
+	}
+	.markup_list_status_txt {
+		clear:both;
+		padding:15px 10px 5px;
+		border-bottom:1px solid #eeeeee;
+		&:after {
+			clear: both; display: block; content: '';
+		}
+		.left {
+			float:left;
+			a {
+				color:#ff5555;
+				text-decoration:underline;
+			}
+		}
+		.right {
+			float: right;
+			font-size: 0;
+		}
+		span {
+			margin-left:5px;
+			display:inline-block; 
+			zoom:1; 
+			*display:inline; 
+			font-size: 11px;
+		}
+	}
+	.normal,
+	.normal a {
+		color:#333;		
+	}
+	.edit, 
+	.edit a {
+			color:#cc3333;		
+		}
+	}
+	.new,
+	.new a {
+			color:#0066cc;		
+	}
+	.ing,
+	.ing a {
+		color:#336600;		
+	}
+	.del,
+	.del a {
+		color:#999;
+		text-decoration:line-through !important;
+		span {
+			text-decoration:line-through;
+		}
+	}
+
+	.markup_list_table {
+		margin-bottom:40px;width:100%;border-left:1px solid #eee;
+		th {
+			padding:10px 5px;font-weight:600;font-size:14px;color:#fff;background:#333;text-align:center;border-right:1px solid #eee;	
+		}
+		td {
+			padding:10px 5px;border-right:1px solid #eee;border-bottom:1px solid #eee;text-align:center;
+		}
+		tr{
+			&.normal.on td {
+				background:#333;
+			}
+			&.edit.on td {
+				background:#cc3333;
+			}
+			&.new.on td {
+				background:#cc3333;
+			}
+			&.ing.on td {
+				background:#336600;
+			}
+			&.del.on td {
+				background:#333;
+			}
+			&.on {
+				td,
+				td a {
+					color:#fff;
+				}
+			}
+		}
+		.pg_no {}
+		.depth1 {}
+		.depth2 {}
+		.depth3 {}
+		.pg_name {}
+		.pg_id {}
+		.pg_url {text-align:left;}
+		.pg_stat {}
+		.pg_date {}
+		.pg_etc {}
+		
+		@include media-screen {
+			td ,
+			td:before {
+				text-align: left;
+			}
+			td:nth-of-type(1):before { content: "No."; }
+			td:nth-of-type(2):before { content: "Depth 1"; }
+			td:nth-of-type(3):before { content: "Depth 2"; }
+			td:nth-of-type(4):before { content: "Depth 3"; }
+			td:nth-of-type(5):before { content: "화면명"; }
+			td:nth-of-type(6):before { content: "화면ID"; }
+			td:nth-of-type(7):before { content: "URL"; }
+			td:nth-of-type(8):before { content: "진행상태"; }
+			td:nth-of-type(9):before { content: "수정일"; }
+			td:nth-of-type(10):before { content: "비고"; }
+		}
+		
+	}
+/* mypage e ================================================= */
+/* ---------------------------------------------------------- */
