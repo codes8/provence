@@ -4,15 +4,15 @@
 // wirter : Ryu
 // date   : 20190901
 // ========================================================== */
-/* ---------------------------------------------------------- */
-/* variables s ============================================== */
+// ---------------------------------------------------------- */
+// variables s ============================================== */
 
 // font
-$default_font: 'Lato';
+$default_font: 'NanumSquare';
 //$default_font: 'Apple SD Gothic Neo';
 //$default_font: 'malgun gothic';
 //$second_font: 'Nanum-Gothic';
-$second_font: 'NanumSquare';
+$second_font: 'Lato';
 
 $fwEL: 100;
 $fwL: 300;
@@ -24,6 +24,7 @@ $default_fc: #333;
 $gray_fc: #666;
 $gray_fc2: #888;
 $light_gray_fc: #aaa;
+$footer_fc:#989898;
 
 //color
 $white: #fff;
@@ -31,15 +32,19 @@ $black: #222;
 $light_gray: #999;
 $light_black: #999;
 $white_gray: #f1f1f1;
-$white_gray2: #e1e1e1;
+$white_gray2: #eee;
 $camel: #c69c6d;
 $gray: #666;
 $red: #f00;
+
 $point_clr: #8dbb6a;
+$point_clr2: #57823a;
+
 $border_clr: #f1f1f1;
 $border_clr2: #ddd;
-$border_clr3: #e5e5e5;
-$border_clr4: #e1e1e1;
+$border_clr3: #999;
+$border_clr4: #ccc;
+$footer_bg_clr:#202020;
 
 //btn
 $df_h_s: 35px;
@@ -47,15 +52,19 @@ $df_h_m: 40px;
 $df_h_l: 50px;
 
 //layout
+$lnb_item_w:199.91px;
 $mo_header_h:60px;
 $mid_wrap_w: 1200px;
 $con_mg: 10px;
+$con_mg2: 20px;
 $con_pd: 10px;
 $con_pd2: 20px;
 $con_pd3: 30px;
 $con_pd_s: 15px;
 $con_pd_m: 25px;
 $con_pd_l: 35px;
+
+$mo_con_pd: 20px;
 
 //media queries
 $w_pc: 1024px;
@@ -67,14 +76,14 @@ $w_max: 1024px;
 $w_mid: 768px;
 $w_min: 320px;
 
-$full: 1920px;
 $middle: 1600px;
 $narrow: 1280px;
 
 //url
-$img_url: '../../images/';
+$img_url: '../images/';
 $img_common_url: 'common/';
 $img_main_url: 'main/';
+$img_pages_url: 'pages/';
 $img_intro_url: 'intro/';
 $img_village_url: 'village/';
 $img_tower_url: 'tower/';
@@ -88,7 +97,9 @@ $resp_td_w: 60%;
 //motion
 $slide_time: 300;
 
-//card
+//pages
+$breadcrumb_h:55px;
+//
 $card-color: (
 	'bc':#e83d44,
 	'hana':#008598,
@@ -130,5 +141,5 @@ $n-kind-name: (
 	'return',
 	'sale'
 );
-/* variables e ============================================== */
-/* ---------------------------------------------------------- */
+// variables e ============================================== */
+// ---------------------------------------------------------- */

@@ -8,6 +8,15 @@
 /* container s ============================================== */
 body {
 	&.hold_body {overflow:hidden;}
+	&.scr_pc {
+		.only_pc {display:block;}		
+		.only_mo {display:none;}
+	}
+	&.scr_mo {
+		overflow-x:hidden;
+		.only_pc {display:none;}
+		.only_mo {display:block;}		
+	}
 }
 
 .grid_wrap {

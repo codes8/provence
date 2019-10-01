@@ -19,5 +19,24 @@ html body .ui-group-theme-a a {color:$default_fc; font-weight:inherit;}
 .ui-mobile-viewport {@include css3-prefix(tap-highlight-color,transparent);}
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {text-shadow:none;}
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {background:initial;}
+// jquery.mobile-1.4.5 : select;
+.ui-select {margin-top:0;margin-bottom:0;}
+	.ui-page-theme-a .ui-btn {
+			color:#fff;
+			text-shadow:none;
+			background-color:#323232;
+			border:0;
+			
+		}
+		.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
+			background:url("#{$img_url}#{$img_common_url}icon_select_arrow_w_down.gif") no-repeat 50% 50%;
+			border-radius:0;
+		}
+//자주묻는질문 DB에서 불러오는 data에 있는 소스 리셋
+.subpag_contents {
+	pre {
+		white-space:inherit;
+	}
+}
 /* etc e ==================================================== */
 /* ---------------------------------------------------------- */

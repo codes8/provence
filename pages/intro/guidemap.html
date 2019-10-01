@@ -1,0 +1,537 @@
+<!DOCTYPE HTML>
+<!--[if IE 8]>    <html lang="ko" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang='ko'>
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,target-densitydpi=medium-dpi, minimal-ui">
+	<meta name="format-detection" content="telephone=no">
+	<title>프로방스 | PROVENCE</title>
+	<link rel="shortcut icon" href="../../images/common/favicon.png">
+	
+	<link rel="stylesheet" type="text/css" href="../../plugin/jquery-ui-1.12.1/jquery-ui.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../../plugin/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css"> -->
+	<link rel="stylesheet" type="text/css" href="../../css/default.css">
+	<link rel="stylesheet" type="text/css" href="../../plugin/swiper-master/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="../../css/display.css">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../plugin/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<!-- <script type="text/javascript" src="../../plugin/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script> -->
+	<script type="text/javascript" src="../../plugin/swiper-master/js/swiper.min.js"></script>
+</head>
+
+<!-- body s -->
+<body>
+
+
+<!-- top -->
+<div class="top">
+	
+	<!-- skip_menu | 본문바로가기메뉴 s -->
+	<ul class="skip_menu">
+		<li><a href="#contents">본문 바로가기</a></li>
+		<li><a href="#nav">메뉴 바로가기</a></li>
+	</ul>
+	<!-- //skip_menu | 본문바로가기메뉴 e -->
+	
+</div>
+<!-- //top e -->
+
+<!-- wrapper | 페이지영역 s -->
+<div class="wrapper">
+  
+  <!-- page_wrap | 컨데이너영역 s -->
+  <div class="container pg_guidemap"><!-- pg_guidemap : 페이지 고유클래스 -->
+
+    <!-- header | 헤더영역 s -->
+		<header class="header">
+			
+			<div class="grid_wrap"><!-- grid_wrap s -->
+
+				<!-- lng_menu | 다국어메뉴 s -->
+				<ul class="lng_menu">
+					<li class="lng_eng"><a href="#none"><span>ENG</span></a></li>
+					<li class="lng_chn"><a href="#none"><span>CHN</span></a></li>
+					<!-- <li class="lng_kor"><a href="#none"><span>KOR</span></a></li> -->
+				</ul>
+				<!-- //lng_menu | 다국어메뉴 e -->
+
+				<!-- logo_top | 상단로고 s -->
+				<a href="/" class="logo_top">
+					<img src="../../images/common/logo_top.png" alt="상단로고">
+				</a>
+				<!-- //logo_top | 상단로고 e -->
+
+				<!-- sns_menu | 소셜메뉴 s -->
+				<ul class="sns_menu">
+					<li class="sns_facebook"><a href="#none"><span>Facebook</span></a></li>
+					<li class="sns_blog"><a href="#none"><span>Blog</span></a></li>
+					<li class="sns_instagram"><a href="#none"><span>Instagram</span></a></li>
+					<li class="sns_youtube"><a href="#none"><span>Youtube</span></a></li>
+				</ul>
+				<!-- //sns_menu | 소셜메뉴 e -->
+
+			</div><!-- //grid_wrap e -->
+
+			<!-- nav | LNB영역 s -->
+			<!-- mo_menu_btn s -->
+			<div class="mo_menu_btn">
+				<div class="menu_icon">
+	        <span class="border border1"></span>
+	        <span class="border border2"></span>
+	        <span class="border border3"></span>
+	      </div>
+	      <span class="text"></span>
+			</div>
+			<!-- //mo_menu_btn e -->
+
+			<nav id="nav" class="nav">
+				
+				<div class="grid_wrap"><!-- grid_wrap s -->
+
+					<ul class="lnb_wrap lnb_dep1">
+						<li>
+							<a href="#none">
+								<span class="en">PROVENCE</span>
+								<span class="ko">프로방스</span>
+							</a>
+
+							<ul class="lnb_dep2">
+								<li>
+									<a href="../intro/introduce.html"><span>프로방스소개</span></a>
+								</li>
+								<li>
+									<a href="../intro/guidemap.html"><span>단지안내도</span></a>
+								</li>
+								<li>
+									<a href="../intro/directions.html"><span>오시는 길</span></a>
+								</li>
+							</ul>
+
+						</li>
+						<li>
+							<a href="#none">
+								<span class="en">VILLAGE</span>
+								<span class="ko">마을동</span>
+							</a>
+
+							<ul class="lnb_dep2">
+								<li>
+									<a href="../village/villageList.html"><span>식당&카페</span></a>
+								</li>
+								<li>
+									<a href="../village/villageList.html"><span>패션</span></a>
+								</li>
+								<li>
+									<a href="../village/villageList.html"><span>홈리빙</span></a>
+								</li>
+								<li>
+									<a href="../village/villageList.html"><span>체험</span></a>
+									</a>
+								</li>
+							</ul>
+
+						</li>
+						<li>
+							<a href="#none">
+								<span class="en">TOWER</span>
+								<span class="ko">주차타워</span>
+							</a>
+
+							<ul class="lnb_dep2">
+								<li>
+									<a href="../tower/towerList.html"><span>주차타워</span></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#none">
+								<span class="en">THEME</span>
+								<span class="ko">힐링테마</span>
+							</a>
+
+							<ul class="lnb_dep2">
+								<li>
+									<a href="../theme/photozoneList.html"><span>포토존</span></a>
+								</li>
+								<li>
+									<a href="../theme/sns_review.html"><span>SNS리뷰</span></a>
+								</li>
+							</ul>
+
+						</li>
+						<li>
+							<a href="#none">
+								<span class="en">CUSTOMER</span>
+								<span class="ko">고객센터</span>
+							</a>
+
+							<ul class="lnb_dep2">
+								<li>
+									<a href="../cs/noticeList.html"><span>공지사항</span></a>
+								</li>
+								<li>
+									<a href="../cs/eventList.html"><span>이벤트</span></a>
+								</li>
+								<li>
+									<a href="../cs/faq.html"><span>자주묻는질문</span></a>
+								</li>
+							</ul>
+
+						</li>
+						<li class="lnb_sitemap">
+							<a href="#none"><span>SITEMAP</span></a>
+							
+							<!-- sitemap 추가 s / 20190921 -->
+							<div class="lnb_dep2_sitemap">
+								<ul class="lnb_dep2_stm_item">
+									<li>
+										<a href="../intro/introduce.html"><span>프로방스소개</span></a>
+									</li>
+									<li>
+										<a href="../intro/guidemap.html"><span>단지안내도</span></a>
+									</li>
+									<li>
+										<a href="../intro/directions.html"><span>오시는 길</span></a>
+									</li>
+								</ul>
+
+								<ul class="lnb_dep2_stm_item">
+									<li>
+										<a href="../village/villageList.html"><span>식당&카페</span></a>
+									</li>
+									<li>
+										<a href="../village/villageList.html"><span>패션</span></a>
+									</li>
+									<li>
+										<a href="../village/villageList.html"><span>홈리빙</span></a>
+									</li>
+									<li>
+										<a href="../village/villageList.html"><span>체험</span></a>
+										</a>
+									</li>
+								</ul>
+
+								<ul class="lnb_dep2_stm_item">
+									<li>
+										<a href="../tower/towerList.html"><span>주차타워</span></a>
+									</li>
+								</ul>
+
+								<ul class="lnb_dep2_stm_item">
+									<li>
+										<a href="../theme/photozoneList.html"><span>포토존</span></a>
+									</li>
+									<li>
+										<a href="../theme/sns_review.html"><span>SNS리뷰</span></a>
+									</li>
+								</ul>
+
+								<ul class="lnb_dep2_stm_item">
+									<li>
+										<a href="../cs/noticeList.html"><span>공지사항</span></a>
+									</li>
+									<li>
+										<a href="../cs/eventList.html"><span>이벤트</span></a>
+									</li>
+									<li>
+										<a href="../cs/faq.html"><span>자주묻는질문</span></a>
+									</li>
+								</ul>
+
+								<a href="#none" class="btn_sitemap_cls"><span>사이트맵닫기</span></a>
+							</div> 
+							<!-- //sitemap 추가 e / 20190921 -->
+
+						</li>
+						<li class="lnb_sns">
+							<!-- sns_menu_dummy | 소셜메뉴복사본 s -->
+							<ul class="sns_menu_dummy">
+							</ul>
+							<!-- //sns_menu_dummy | 소셜메뉴복사본 ㄷ -->				
+						</li>
+					</ul>
+					
+				</div><!-- //grid_wrap e -->
+				
+			</nav>
+
+			
+    	<!-- nav | LNB영역 e -->
+			
+		</header>
+    <!-- //header | 헤더영역 e -->
+
+    <!-- contents | 컨텐츠영역 s -->
+    <div id="contents" class="contents" tabIndex="0">
+      
+      <!-- subpg_title s -->
+      <div class="subpg_title_wrap">
+        <div class="subpg_title_filter"></div>
+        <div class="grid_wrap"><!-- grid_wrap s -->
+          
+          <h2 class="subpg_tit">단지안내도</h2>
+
+          <!-- breadcrumb s -->
+          <ul class="breadcrumb_wrap">
+            <li class="brd_d1"><a href="#none"><span>Home</span></a></li>
+            <li class="brd_d2"><a href="#none"><span>프로방스</span></a></li>
+            <li class="brd_d3">
+              <a href="#none" class="leef"><span>단지안내도</span></a>
+              <ul class="brd_select">
+                <li><a href="#none"><span>프로방스소개</span></a></li>
+                <li><a href="#none"><span>단지안내도</span></a></li>
+                <li><a href="#none"><span>오시는길</span></a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="sns_quick_menu">
+            <li class="sns_q_fb"><a href="#none"><span>Facebook</span></a></li>
+            <li class="sns_q_in"><a href="#none"><span>Instagram</span></a></li>
+            <li class="sns_q_blog"><a href="#none"><span>Blog</span></a></li>
+            <li class="sns_q_prt"><a href="#none"><span>Print</span></a></li>
+          </ul>
+          <!-- //breadcrumb e -->
+
+        </div><!-- //grid_wrap e -->        
+
+      </div>
+      <!-- //subpg_title e -->
+      
+      <div class="grid_wrap"><!-- grid_wrap s -->
+
+        <!-- subpg_contents s -->
+        <h3 class="subpg_con_tit">단지안내도</h3>
+        <p class="subpg_con_tit_desc">천 가지 즐거움이 숨어 있는 프로방스마을! 미리 살펴보시고 꼼꼼하게 즐기세요.</p>
+
+        <div class="subpg_contents">
+          
+          <img src="../../images/pages/sub_con_town_guide.jpg" class="img_guidemap" alt="마을지도">
+
+          <div class="map_info">
+            
+            <div class="map_info_item map_info_item1">
+              <div class="mpin_tit">
+                <span>FOOD&BEVERAGE</span>
+                <h5>식당&까페</h5>
+              </div>
+              <ul class="mpin_list">
+                <li><span>1</span>달곰삼삼</li>
+                <li><span>2</span>더치by쿠쿠오나</li>
+                <li><span>3</span>르바인</li>
+                <li><span>4</span>올리브크릭</li>
+                <li><span>5</span>카페로즈</li>
+                <li><span>6</span>꽃수다(플라워카페)</li>
+                <li><span>7</span>메종드프로방스</li>
+                <li><span>8</span>항아리숯불닭갈비</li>
+                <li><span>9</span>식객촌</li>
+                <li><span>10</span>류재은베이커리</li>
+                <li><span>11</span>루시카토</li>
+                <li><span>13</span>카페 쿠쿠오나</li>
+              </ul>
+            </div>
+
+            <div class="map_info_item map_info_item2">
+              <div class="mpin_tit">
+                <span>FASHION</span>
+                <h5>패션잡화</h5>
+              </div>
+              <ul class="mpin_list">
+                <li><span>1</span>내가만든집</li>
+                <li><span>2</span>W-드레스룸</li>
+                <li><span>3</span>인디</li>
+                <li><span>4</span>샤인/li>
+                <li><span>5</span>판도라</li>
+                <li><span>6</span>치크</li>
+                <li><span>7</span>나비</li>
+                <li><span>8</span>히든시티</li>
+                <li><span>9</span>우컬렉션</li>
+                <li><span>10</span>루페</li>
+                <li><span>11</span>아토</li>
+                <li><span>12</span>1COR13</li>
+                <li><span>13</span>헤라</li>
+                <li><span>14</span>어링</li>
+                <li><span>15</span>애니타임</li>
+                <li><span>16</span>퍼플</li>
+              </ul>
+            </div>
+
+            <div class="map_info_item map_info_item3">
+              <div class="mpin_tit">
+                <span>HOME&LIVIN</span>
+                <h5>홈&리빙</h5>
+              </div>
+              <ul class="mpin_list">
+                <li><span>1</span>클라스가든</li>
+                <li><span>2</span>메종</li>
+                <li><span>3</span>벨라</li>
+                <li><span>4</span>메종오브제</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+              </ul>
+            </div>
+
+            <div class="map_info_item map_info_item4">
+              <div class="mpin_tit">
+                <span>SENSIBLE LIFE</span>
+                <h5>문화컨텐츠</h5>
+              </div>
+              <ul class="mpin_list">
+                <li><span>1</span>포토스토리</li>
+                <li><span>2</span>쥬라리움(실내동물원)</li>
+                <li><span>3</span>팝케리커쳐</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+                <li class="only_pc">&nbsp</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- //subpg_contents e -->
+        
+      </div><!-- //grid_wrap e -->
+
+    </div>
+    <!-- //contents | 컨텐츠영역 e -->
+
+    <!-- footer | 푸터영역 s -->
+		<footer class="footer">
+
+			<div class="grid_wrap"><!-- grid_wrap s -->
+				
+				<div class="f_cs_wrap">
+					<h5><span>고객센터</span>Contact info</h5>
+					<div class="f_cs">
+						<a href="tel:0319466353"><span>031.946.6353</span></a>
+						<p>[운영시간 안내 ▷ 연중무휴 10:00~22:30]</p>
+					</div>
+				</div>
+
+				<div class="f_notice_wrap">
+					<h5><span>공지사항</span>News & Notice</h5>
+					<ul class="f_notice_board">
+						<li><a href="#none">파주프로방스 홈페이지 리뉴얼되었습니다.</a></li>
+						<li><a href="#none">불빛 축제를 여름한정 스페셜 울트라 초 저렴이로 개최합니다.</a></li>
+						<li><a href="#none">최고의 포토제닉은 누구??</a></li>
+					</ul>
+				</div>
+
+				<div class="f_info">
+					<ul class="f_info_select">
+						<li>
+							<select name="" id="" class='select_b'>
+								<option value="">파트너사이트</option>
+								<option value="">파주프로방스</option>
+								<option value="">파주프로방스</option>
+							</select>
+						</li>
+						<li>
+							<select name="" id="" class='select_b'>
+								<option value="">패밀리사이트</option>
+								<option value="">파주프로방스</option>
+								<option value="">파주프로방스</option>
+							</select>
+						</li>						
+					</ul>
+					<div class="f_info_con">
+						<span>프로방스</span>
+						<span class="div_h">대표:정준용</span>
+						<span class="div_h">사업자등록번호:515-85-13547</span><br>
+						<span>경기도 파주시 탄현면 새오리로 77</span><br class="only_mo">
+						<span class="div_h div_h_mo">대표번호:<a href="tel:0319466353">031-946-6353</a></span>
+						<span class="div_h"><a href="mailto:info@Provence.town" target="_blank"></a>info@Provence.town</span><br>
+						<p>Copyright(c) Paju Provence. All Rights Reserved.</p>
+					</div>
+				</div>
+
+			</div><!-- //grid_wrap e -->
+
+		</footer>
+    <!-- //footer | 푸터영역 e -->
+
+  </div>
+  <!-- //page_wrap | 컨테이너영역 E -->
+
+</div>
+<!-- //wrapper e -->
+
+<!-- bottom s -->
+<div class="bottom">
+
+	<!-- top_btn | 탑버튼 s -->
+	<a href="#" class="top_btn upper"><span>TOP</span></a>
+	<!-- //top_btn | 탑버튼 e -->
+
+</div>
+<!-- //bottom e -->
+
+<!-- layer_popup s -->
+			<!-- layer_popup_contents | 레이어팝업 컨텐츠 영역 s -->
+			<!-- depth1 s -->
+			<div class="layer_pop_contents lp_depth1"></div>
+			<!-- depth1 e -->
+			<!-- depth2 s -->
+			<div class="layer_pop_contents lp_depth2"></div>
+			<!-- depth2 e -->
+			<!-- depth3 s -->
+			<div class="layer_pop_contents lp_depth3"></div>
+			<!-- depth3 e -->
+			<!-- depth4 s -->
+			<div class="layer_pop_contents lp_depth4"></div>
+			<!-- depth4 e -->
+			<!-- //layer_popup_contents | 레이어팝업 컨텐츠 영역 e -->
+<!-- //layer_popup e -->
+
+<!-- quick_menu s -->
+<!-- include ../../include_dev/quick_menu.html -->
+<!-- //quick_menu e -->
+
+<!-- script_include s -->
+<script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/display.js"></script>
+<!-- //script_include e -->
+<script>
+  $(document).ready(function(){
+  
+  }); 
+</script>
+
+
+</body>
+<!-- //body e -->
+
+</html>

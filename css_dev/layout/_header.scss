@@ -88,7 +88,7 @@
 		}
 		.sns_blog a,
 		.sns_blog a:hover {
-			@include bg-pst(30px, 0);
+			@include bg-pst(96px, 0);
 		}
 		.sns_instagram a,
 		.sns_instagram a:hover {
@@ -96,14 +96,14 @@
 		}
 		.sns_youtube a,
 		.sns_youtube a:hover {
-			@include bg-pst(96px, 0);
+			@include bg-pst(30px, 0);
 		}
 	}
 
 	.sns_menu_dummy {
 		display:none;
 		float:left;
-		margin-top:200px;
+		margin-top:160px;
 		margin-bottom:$con_pd2;
 		margin-left:$con_pd2;
 		@include media-screen {
@@ -128,7 +128,7 @@
 		}
 		.sns_blog a,
 		.sns_blog a:hover {
-			@include bg-pst(47px, 0);
+			@include bg-pst(148px, 0);
 		}
 		.sns_instagram a,
 		.sns_instagram a:hover {
@@ -136,7 +136,7 @@
 		}
 		.sns_youtube a,
 		.sns_youtube a:hover {
-			@include bg-pst(148px, 0);
+			@include bg-pst(47px, 0);
 		}
 	}
 }

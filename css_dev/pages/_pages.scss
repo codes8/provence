@@ -1,0 +1,635 @@
+@charset "UTF-8";
+// ========================================================== */
+// file   : pages.scss
+// wirter : Ryu
+// date   : 20190901
+// ========================================================== */
+/* ---------------------------------------------------------- */
+/* pages s ================================================== */
+//서브페이지 상단비쥬얼
+.subpg_title_wrap {
+	position:relative;
+	.grid_wrap {position:relative;}
+	.subpg_title_filter {
+		@include posa_tl(0,0);
+    width:100%;
+    height:100%;
+    @include box-rgba(0,0,0,0.5,$black);
+    z-index:0;
+	}
+	.subpg_tit {
+		padding:100px 0;
+		font:{
+			weight:$fwB;
+			size:3.6em;
+		};
+		color:#fff;
+		letter-spacing:-0.05em;
+		text-align:center;
+		@include media-screen {
+			padding:40px;
+			font-size:3em;
+			text-align:left;
+		}
+	}
+}
+
+.pg_introduce,
+.pg_guidemap,
+.pg_directions {
+	.subpg_title_wrap {
+		background:url("#{$img_url}#{$img_pages_url}sub_provence_top_bg.jpg");
+		background-size:cover;
+	}
+}
+.pg_village_list,
+.pg_village_view {
+	.subpg_title_wrap {
+		background:url("#{$img_url}#{$img_pages_url}sub_village_top_bg.jpg");
+		background-size:cover;
+	}
+}
+.pg_tower_list,
+.pg_tower_view,
+.pg_tower_info {
+	.subpg_title_wrap {
+		background:url("#{$img_url}#{$img_pages_url}sub_tower_top_bg.jpg");
+		background-size:cover;
+	}
+}
+.pg_photozone_list,
+.pg_photozone_view,
+.pg_sns_review {
+	.subpg_title_wrap {
+		background:url("#{$img_url}#{$img_pages_url}sub_theme_top_bg.jpg");
+		background-size:cover;
+	}
+}
+.pg_notice_list,
+.pg_notice_view,
+.pg_event_list,
+.pg_event_view,
+.pg_faq {
+	.subpg_title_wrap {
+		background:url("#{$img_url}#{$img_pages_url}sub_cs_top_bg.jpg");
+		background-size:cover;
+	}
+}
+
+//서브페이지 본문
+.subpg_con_tit {
+	margin-top:70px;
+	margin-bottom:20px;
+	font-size:4em;
+	font-weight:$fwB;
+	color:$default_fc;
+	@include media-screen {
+		@include setMoDfPadding();
+		margin-top:60px;
+		margin-bottom:15px;
+		font-size:3em;
+	}
+}
+.subpg_con_tit_desc {
+	font-size:1.8em;
+	line-height:30px;
+	color:$gray_fc;
+	@include media-screen {
+		@include setMoDfPadding();
+		font-size:1.6em;
+		line-height:24px;
+	}
+}
+
+.subpg_contents {
+	float:left;
+	padding:70px 0;
+	padding-bottom:100px;
+	width:100%;
+	line-height:30px;
+	img {
+		//max-width:100%;
+	}
+	@include media-screen {
+		padding:40px 0 60px;
+		line-height:24px;
+		img {
+			width:100%;
+		}
+	}
+}
+
+//프로방스 > 프로방스소개
+.pg_introduce {
+	.subpg_contents {
+		font-size:2em;
+		text-align:center;
+		img {
+			 margin-bottom:60px;
+		}
+		@include media-screen {
+			font-size:1.8em;
+			> p {
+				@include setMoDfPadding();
+				line-height:28px;
+			}
+			img {
+				//margin-bottom:0;
+			}
+		}
+	}
+}
+.provence_info {
+	position:relative;
+	padding:100px 40px 50px 70px;
+	border:1px solid $border_clr4;
+	text-align:left;
+	.prvi_txt {
+		h4 {
+			margin-bottom:30px;
+			font-size:2em;
+			color:#000;
+		}
+		p {
+			margin-bottom:80px;
+			font-size:18px;
+			line-height:30px;
+			b {
+				font-weight:$fwB;
+				font-size:24px;
+				color:$point_clr;
+			}
+		}
+	}
+	.prvi_desc {
+		max-width:440px;
+		li {
+			font-size:14px;
+			color:$gray_fc;
+			line-height:24px;
+		}
+	}
+	.prvi_time {
+		@include posa_br(55px,40px);
+		width:610px;
+		height:378px;
+		background:url("#{$img_url}#{$img_pages_url}sub_con_intro_03.png");
+		.time_wrap {
+			@include posa_br(65px,60px);
+			font-weight:$fwB;
+			font-size:60px;
+			color:#986439;			
+			text-align:center;
+			.open,
+			.divs,
+			.close {
+				font-family:$second_font;
+				line-height:55px;
+			}
+			.desc {
+				margin-top:30px;
+				font-size:24px;
+				color:$default_fc;
+			}
+		}
+	}
+	@include media-screen {
+		padding:0 20px 0 20px;
+		border:0;
+		.prvi_txt {
+			h4 {
+				font-size:30px;
+			}
+			p, b {
+				font-size:20px;
+			}
+		}
+		.prvi_desc {
+			li {
+				font-size:16px;
+			}
+		}
+		.prvi_desc {
+			max-width:unset
+		}
+		.prvi_time { 
+			position:relative;
+			margin-left:-180px;
+			bottom:55px;
+			right:unset;
+			left:50%;
+			width:360px;
+			height:223px;
+			background-size:cover;
+			.time_wrap {
+				font-size:42px;
+				right:30px;
+				bottom:35px;
+				.open,
+				.divs,
+				.close {
+					line-height:40px;
+				}
+				.desc {
+					margin-top:15px;
+					font-size:16px;
+				}
+			}
+		}
+	}
+}
+
+//프로방스 > 단지 안내
+.pg_guidemap {
+	.img_guidemap,
+	.map_info {
+		float:left;
+		width:100%;
+		border:2px solid $border_clr2;
+	}
+	.map_info {
+		margin-top:30px;
+	}
+	@include media-screen {
+		.map_info {
+			border:0;
+		}
+	}
+}
+.map_info_item {
+	float:left;
+	width:25%;
+	height:100%;
+	border-left:1px solid $border_clr2;
+	&:first-child {
+		border-left:0;
+	}
+	.mpin_tit {
+		padding:20px 20px 20px 90px;
+		text-align:left;
+		border-bottom:1px solid $border_clr2;
+		span {
+			font-family:$second_font;
+			font-size:1.4em;
+			color:#989898;
+		}
+		h5 {
+			font-size:1.8em;
+			color:#383838;
+		}
+	}
+	.mpin_list {
+		float:left;
+		padding:20px 50px;
+		> li {
+			float:left;
+			padding:10px 0;
+			width:100%;
+			line-height:18px;
+			font-size:1.6em;
+			> span {
+				float:left;
+				margin-right:10px;
+				width:18px;
+				height:18px;
+				line-height:18px;
+				font-family:$second_font;
+				font-size:10px;
+				color:#fff;
+				text-align:center;
+				border-radius:9px;
+			}
+		}
+	}
+	&.map_info_item1 {
+		.mpin_tit {
+			background:#eee url("#{$img_url}#{$img_pages_url}icon_food.png") no-repeat 35px 50%;
+		}
+		.mpin_list {
+			> li {
+				> span {
+					background:#e93429;
+				}
+			}
+		}
+	}
+	&.map_info_item2 {
+		.mpin_tit {
+			background:#eee url("#{$img_url}#{$img_pages_url}icon_close.png") no-repeat 25px 50%;
+		}
+		.mpin_list {
+			> li {
+				> span {
+					background:#171b64;
+				}
+			}
+		}
+	}
+	&.map_info_item3 {
+		.mpin_tit {
+			background:#eee url("#{$img_url}#{$img_pages_url}icon_cart.png") no-repeat 35px 50%;
+		}
+		.mpin_list {
+			> li {
+				> span {
+					background:#21ac37;
+				}
+			}
+		}
+	}
+	&.map_info_item4 {
+		.mpin_tit {
+			background:#eee url("#{$img_url}#{$img_pages_url}icon_culture.png") no-repeat 35px 50%;
+		}
+		.mpin_list {
+			> li {
+				> span {
+					background:#00a0ea;
+				}
+			}
+		}
+	}
+	@include media-screen {
+		width:100%;
+		.mpin_tit {
+			padding:30px 20px 20px 90px;
+			h5 {
+				float:left;
+				margin-top:-7px;
+				margin-right:10px;
+				font-size:2.4em;
+			}
+		}
+		.mpin_list {
+			padding:20px 30px;
+			> li {
+				width:50%;
+			}
+		}
+	}
+}
+
+//프로방스 > 오시는길
+.pg_directions {
+	.subpg_contents {
+		padding-top:10px;
+		.btn_square_w {
+			line-height:1.4em;
+			padding-top:7px;
+			padding-bottom:7px;
+		}
+		.location_map_wrap {
+			//width:unset;
+			width:100%;
+			height:unset;
+			height:480px;
+		}
+	}
+	@include media-screen {
+		.location_tel {
+			@include setMoDfPadding();
+			.title_square_b {
+				float:left;
+				font-size:1.6em;
+			}
+			.big_point_t {
+				clear:both;
+				padding-top:10px;
+				text-align:left;
+			}
+			.location_addr {
+				text-align:left;
+			}
+		}
+		.btn_wrap {
+			@include setMoDfPadding();
+		}
+		.location_map_wrap {
+			height:400px;
+		}
+	}
+}
+.direction_info {
+	float:left;
+	clear:both;
+	margin-top:40px;
+	width:100%;
+	li {
+		.direc_item {
+			.dii_tit,
+			.dii_con {
+				float:left;
+				padding-top:30px;
+				padding-bottom:30px;
+				height:80px;
+				border-top:1px solid $border_clr2;
+				border-bottom:1px solid $border_clr2;
+			}
+			.dii_tit {
+				width:25%;
+				padding-left:85px;
+				font-size:1.8em;
+			}
+			.dii_con {
+				padding-left:50px;
+				width:75%;
+				font-size:1.6em;
+				color:$gray_fc;
+			}
+		}
+		.direc_item1 {
+			.dii_tit {
+				background:#eee url("#{$img_url}#{$img_pages_url}icon_car.png") no-repeat 35px 50%;
+			}
+		}
+		.direc_item2 {
+			.dii_tit {
+				background:#eee url("#{$img_url}#{$img_pages_url}icon_subway.png") no-repeat 35px 50%;
+			}
+		}
+		.direc_item3 {
+			.dii_tit {
+				background:#eee url("#{$img_url}#{$img_pages_url}icon_bus.png") no-repeat 35px 50%;
+			}
+		}
+	}
+	@include media-screen {
+		@include setMoDfPadding();
+		li {
+			.direc_item {
+				.dii_tit,
+				.dii_con {
+					width:100%;
+					height:unset;
+				}
+				.dii_tit {
+					padding:10px 10px 10px 50px;
+					background-position-x:12px;
+					border-bottom:0;
+				}
+				.dii_con{
+					padding:20px 20px 40px 20px;
+					line-height:24px;
+					border-bottom:0;
+				}
+			}
+		}
+	}
+}
+
+//주차타워
+.pg_tower_list {
+	.thumb_list_wrap {
+		width:100%;
+	}
+	.location_info_wrap {
+		width:100%;
+		.location_parking {
+			display:block;
+			.parking_tit {
+				margin-bottom:30px;
+			}
+		}
+		.view_table {
+			th,
+			td {
+				padding:16px 2px 17px;
+				font-size:1.6em;
+			}
+		}
+		.desc_tit {
+			font-size:1.6em;
+		}
+		.desc_con {
+			font-size:1.4em;
+			line-height:24px;
+		}
+	}
+	@include media-screen {
+		.location_info_wrap {
+			@include setMoDfPadding();
+		}
+	}
+}
+
+.tab_list_wrap {
+	
+	width:100%;
+	
+	.tab_list {
+		padding:18px 0px 17px 60px;
+		width:100%;
+		background:$white_gray2;
+		> li {
+			display:inline-block;
+			width:12%;
+			a {
+				font-family:$second_font;
+				font-weight:$fwB;
+				font-size:2.4em;
+				span {
+					display:inline-block;
+					width:45px;
+					height:45px;
+					line-height:45px;
+					text-align:center;
+					border-radius:22px;
+					background:$white_gray2;
+				}
+			}
+			&:last-child {
+				span {width:108px;}
+			}
+			&.on {
+				a {
+					color:#fff;
+					span {
+						background:$default_fc;
+					}
+				}
+			}
+		}
+	}
+	@include media-screen {
+		@include setMoDfPadding();		
+		.tab_list {
+			padding:10px 20px 10px 20px;
+			> li {
+				width:21%;
+			}
+		}
+	}
+}
+
+.tab_cont {
+	display:none;
+	h5 {
+		margin-top:50px;
+		margin-bottom:40px;
+		font-weight:$fwB;
+		font-size:2.4em;
+		@include media-screen {
+			padding-right:20px;
+			padding-left:20px;
+		}
+	}
+	&.on {
+		display:block;
+	}
+}
+
+.subtab_list_wrap {
+	margin-bottom:30px;
+	padding-bottom:30px;
+	border-bottom:1px solid $border_clr2;
+	.subtab_list {
+		li {
+			position:relative;
+			display:inline-block;
+			padding-left:60px;
+			a {
+				font-size:2em;
+				color:$gray_fc;
+				&:hover {
+					color:$point_clr;
+				}
+			}
+			&:before {
+				content:'';
+		    display:inline-block;
+   			clear:both;
+		    @include posa_tl(3px,28px);
+		    width:2px;
+		    height:16px;
+			  background:$border_clr2;
+			}
+			&:first-child {
+				padding-left:0;
+				&:before {
+					display:none;
+				}
+			}
+			&.on {
+				a {
+					color:#000;
+				}
+			}
+		}
+	}
+	@include media-screen {
+		margin-right:$mo_con_pd;
+		margin-left:$mo_con_pd;
+		padding-bottom:20px;
+		.subtab_list {
+			li {
+				padding-left:$mo_con_pd;
+				&:before {
+					top:2px;
+					left:8px;
+				}
+			}
+		}
+	}
+}
+/* pages e ================================================== */
+/* ---------------------------------------------------------- */

@@ -7,6 +7,26 @@
 /* ---------------------------------------------------------- */
 /* table s ================================================== */
 
+//view_table
+.view_table {
+	border-top:2px solid $border_clr3;
+	border-left:1px solid $border_clr3;
+  td,
+  th {
+    padding:5px 0 6px;
+    font-size:1.4em;
+    text-align:center;
+    border-right:1px solid $border_clr3;
+    border-bottom:1px solid $border_clr3;
+  }
+  th {
+    background:#eee;
+  }
+  td {
+    
+  }
+}
+
 //responsive Table
 .responsive_table {
 	@include media-screen {

@@ -100,7 +100,7 @@
 	}
 	.normal,
 	.normal a {
-		color:#333;		
+		color:#666;		
 	}
 	.edit, 
 	.edit a {
@@ -134,13 +134,13 @@
 		}
 		tr{
 			&.normal.on td {
-				background:#333;
+				background:#666;
 			}
 			&.edit.on td {
 				background:#cc3333;
 			}
 			&.new.on td {
-				background:#cc3333;
+				background:#0066cc;
 			}
 			&.ing.on td {
 				background:#336600;

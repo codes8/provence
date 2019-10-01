@@ -11,10 +11,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,target-densitydpi=medium-dpi, minimal-ui">
 	<meta name="format-detection" content="telephone=no">
 	<title>프로방스 | PROVENCE</title>
-	<link rel="shortcut icon" href="../../images/common/">
+	<link rel="shortcut icon" href="../../images/common/favicon.png">
 	
 	<link rel="stylesheet" type="text/css" href="../../plugin/jquery-ui-1.12.1/jquery-ui.css">
-	<link rel="stylesheet" type="text/css" href="../../plugin/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../../plugin/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css"> -->
 	<link rel="stylesheet" type="text/css" href="../../css/default.css">
 	<link rel="stylesheet" type="text/css" href="../../plugin/swiper-master/css/swiper.css">
 	<link rel="stylesheet" type="text/css" href="../../css/display.css">
@@ -28,7 +28,7 @@
 	<![endif]-->
 	<script type="text/javascript" src="../../js/jquery.min.js"></script>
 	<script type="text/javascript" src="../../plugin/jquery-ui-1.12.1/jquery-ui.js"></script>
-	<script type="text/javascript" src="../../plugin/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+	<!-- <script type="text/javascript" src="../../plugin/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script> -->
 	<script type="text/javascript" src="../../plugin/swiper-master/js/swiper.min.js"></script>
 </head>
 
@@ -53,12 +53,12 @@
 <div class="wrapper">
   
   <!-- page_wrap | 컨데이너영역 s -->
-  <div class="container pg_main"><!-- pg_main 은 페이지 고유클래스 -->
+  <div class="container pg_main"><!-- pg_main : 페이지 고유클래스 -->
 
     <!-- header | 헤더영역 s -->
 		<header class="header">
 			
-			<div class="grid_wrap">
+			<div class="grid_wrap"><!-- grid_wrap s -->
 
 				<!-- lng_menu | 다국어메뉴 s -->
 				<ul class="lng_menu">
@@ -83,7 +83,7 @@
 				</ul>
 				<!-- //sns_menu | 소셜메뉴 e -->
 
-			</div>
+			</div><!-- //grid_wrap e -->
 
 			<!-- nav | LNB영역 s -->
 			<!-- mo_menu_btn s -->
@@ -99,7 +99,7 @@
 
 			<nav id="nav" class="nav">
 				
-				<div class="grid_wrap">
+				<div class="grid_wrap"><!-- grid_wrap s -->
 
 					<ul class="lnb_wrap lnb_dep1">
 						<li>
@@ -110,35 +110,35 @@
 
 							<ul class="lnb_dep2">
 								<li>
-									<a href="#none"><span>프로방스소개</span></a>
+									<a href="../intro/introduce.html"><span>프로방스소개</span></a>
 								</li>
 								<li>
-									<a href="#none"><span>단지안내도</span></a>
+									<a href="../intro/guidemap.html"><span>단지안내도</span></a>
 								</li>
 								<li>
-									<a href="#none"><span>오시는 길</span></a>
+									<a href="../intro/directions.html"><span>오시는 길</span></a>
 								</li>
 							</ul>
 
 						</li>
 						<li>
 							<a href="#none">
-								<span class="en" style="font-size:18px;">VILLAGE</span>
+								<span class="en">VILLAGE</span>
 								<span class="ko">마을동</span>
 							</a>
 
 							<ul class="lnb_dep2">
 								<li>
-									<a href="#none"><span>식당&카페</span></a>
+									<a href="../village/villageList.html"><span>식당&카페</span></a>
 								</li>
 								<li>
-									<a href="#none"><span>패션</span></a>
+									<a href="../village/villageList.html"><span>패션</span></a>
 								</li>
 								<li>
-									<a href="#none"><span>홈리빙</span></a>
+									<a href="../village/villageList.html"><span>홈리빙</span></a>
 								</li>
 								<li>
-									<a href="#none"><span>홈리빙</span></a>
+									<a href="../village/villageList.html"><span>체험</span></a>
 									</a>
 								</li>
 							</ul>
@@ -152,7 +152,7 @@
 
 							<ul class="lnb_dep2">
 								<li>
-									<a href="#none"><span>주차타워</span></a>
+									<a href="../tower/towerList.html"><span>주차타워</span></a>
 								</li>
 							</ul>
 						</li>
@@ -164,10 +164,10 @@
 
 							<ul class="lnb_dep2">
 								<li>
-									<a href="#none"><span>포토존</span></a>
+									<a href="../theme/photozoneList.html"><span>포토존</span></a>
 								</li>
 								<li>
-									<a href="#none"><span>SNS리뷰</span></a>
+									<a href="../theme/sns_review.html"><span>SNS리뷰</span></a>
 								</li>
 							</ul>
 
@@ -180,19 +180,81 @@
 
 							<ul class="lnb_dep2">
 								<li>
-									<a href="#none"><span>공지사항</span></a>
+									<a href="../cs/noticeList.html"><span>공지사항</span></a>
 								</li>
 								<li>
-									<a href="#none"><span>이벤트</span></a>
+									<a href="../cs/eventList.html"><span>이벤트</span></a>
 								</li>
 								<li>
-									<a href="#none"><span>자주묻는질문</span></a>
+									<a href="../cs/faq.html"><span>자주묻는질문</span></a>
 								</li>
 							</ul>
 
 						</li>
-						<li class="lnb_sitmemap">
-							<a href=""><span>SITEMAP</span></a>
+						<li class="lnb_sitemap">
+							<a href="#none"><span>SITEMAP</span></a>
+							
+							<!-- sitemap 추가 s / 20190921 -->
+							<div class="lnb_dep2_sitemap">
+								<ul class="lnb_dep2_stm_item">
+									<li>
+										<a href="../intro/introduce.html"><span>프로방스소개</span></a>
+									</li>
+									<li>
+										<a href="../intro/guidemap.html"><span>단지안내도</span></a>
+									</li>
+									<li>
+										<a href="../intro/directions.html"><span>오시는 길</span></a>
+									</li>
+								</ul>
+
+								<ul class="lnb_dep2_stm_item">
+									<li>
+										<a href="../village/villageList.html"><span>식당&카페</span></a>
+									</li>
+									<li>
+										<a href="../village/villageList.html"><span>패션</span></a>
+									</li>
+									<li>
+										<a href="../village/villageList.html"><span>홈리빙</span></a>
+									</li>
+									<li>
+										<a href="../village/villageList.html"><span>체험</span></a>
+										</a>
+									</li>
+								</ul>
+
+								<ul class="lnb_dep2_stm_item">
+									<li>
+										<a href="../tower/towerList.html"><span>주차타워</span></a>
+									</li>
+								</ul>
+
+								<ul class="lnb_dep2_stm_item">
+									<li>
+										<a href="../theme/photozoneList.html"><span>포토존</span></a>
+									</li>
+									<li>
+										<a href="../theme/sns_review.html"><span>SNS리뷰</span></a>
+									</li>
+								</ul>
+
+								<ul class="lnb_dep2_stm_item">
+									<li>
+										<a href="../cs/noticeList.html"><span>공지사항</span></a>
+									</li>
+									<li>
+										<a href="../cs/eventList.html"><span>이벤트</span></a>
+									</li>
+									<li>
+										<a href="../cs/faq.html"><span>자주묻는질문</span></a>
+									</li>
+								</ul>
+
+								<a href="#none" class="btn_sitemap_cls"><span>사이트맵닫기</span></a>
+							</div> 
+							<!-- //sitemap 추가 e / 20190921 -->
+
 						</li>
 						<li class="lnb_sns">
 							<!-- sns_menu_dummy | 소셜메뉴복사본 s -->
@@ -202,7 +264,8 @@
 						</li>
 					</ul>
 					
-				</div>
+				</div><!-- //grid_wrap e -->
+				
 			</nav>
 
 			
@@ -218,36 +281,56 @@
       <div class="main_banner_wrap main_section">
 
         <div class="fix_baaner_zone">
+          <img src="../../images/main/main_banner_title.png" alt="
+          메인배너고정이미지" class="only_pc">
+          <img src="../../images/main/main_banner_title_m.png" alt="
+          메인배너고정이미지" class="only_mo">
+          <!--
           <div class="fix_banner_t1">MERCI! <br>PAJU PROVENCE</div>  
           <div class="fix_banner_t2">아름다운 생활, 행복한 시간을 함께 만들어 갑니다!</div>  
+          -->
         </div>
 
         <!-- swiper s -->
         <div class="swiper-container swiper_main_banner">
+          <div class="swiper_filter"></div>
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
               <a href="#">
               <div class="img_cont">
-                <img src="" alt="메인배너">
+                <img src="../../images/@temp/temp_main_banner_img_02.jpg" alt="메인배너">
               </div>
               </a>
             </li>
             <li class="swiper-slide">
               <a href="#">
               <div class="img_cont">
-                <img src="" alt="메인배너">
+                <img src="../../images/@temp/temp_main_banner_img_03.jpg" alt="메인배너">
               </div>
               </a>
             </li>
             <li class="swiper-slide">
               <a href="#">
               <div class="img_cont">
-                <img src="" alt="메인배너">
+                <img src="../../images/@temp/temp_main_banner_img_04.jpg" alt="메인배너">
+              </div>
+              </a> 
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+              <div class="img_cont">
+                <img src="../../images/@temp/temp_main_banner_img_05.jpg" alt="메인배너">
               </div>
               </a> 
             </li>
           </ul>
+          <!-- Add Pagination s -->
           <div class="swiper-pagination"></div>
+          <!-- //Add Pagination e -->
+          <!-- Add Arrows s -->
+          <div class="swiper-button-next swiper-mb-button-next"></div>
+          <div class="swiper-button-prev swiper-mb-button-prev"></div>
+          <!-- //Add Arrows e -->
         </div>
         <!-- //swiper e -->
 
@@ -255,216 +338,256 @@
       <!-- //main_banner e -->
 
       <!-- post_list s -->
-      <div class="post_list_wrap main_section">
-        <div class="main_subtitle">
-          <h3>WITH <b>PROVENCE</b></h3>
-          <p>파주프로방스에서 진행되는 다양한 이벤트로 많은 혜택을 누리세요</p>
-        </div>
+      <div class="grid_wrap"><!-- grid_wrap s -->
 
-        <!-- swiper s -->
-        <div class="swiper-container swiper_post_list">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <a href="#">
-                <!-- list_item s -->
-                <div class="list_item">
-                  <div class="item_thumb"><img src="" alt="썸네일"></div>
-                  <div class="item_subtitle">파주 프로방스 365일 불빛 축제</div>
-                  <div class="item_post_date">2019.08.27</div>
-                  <div class="btn btn_more"><span>more</span></div>
-                </div>
-                <!-- //list_item e -->
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="#">
-                <!-- list_item s -->
-                <div class="list_item">
-                  <div class="item_thumb"><img src="" alt="썸네일"></div>
-                  <div class="item_subtitle">파주 프로방스 365일 불빛 축제</div>
-                  <div class="item_post_date">2019.08.27</div>
-                  <div class="btn btn_more"><span>more</span></div>
-                </div>
-                <!-- //list_item e -->
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="#">
-                <!-- list_item s -->
-                <div class="list_item">
-                  <div class="item_thumb"><img src="" alt="썸네일"></div>
-                  <div class="item_subtitle">파주 프로방스 365일 불빛 축제</div>
-                  <div class="item_post_date">2019.08.27</div>
-                  <div class="btn btn_more"><span>more</span></div>
-                </div>
-                <!-- //list_item e -->
-              </a>
-            </li>
-          </ul>
-          <div class="swiper-pagination"></div>
-        </div>
-        <!-- //swiper e -->
+        <div class="post_list_wrap main_section">
+          <div class="main_subtitle">
+            <h3>WITH <b>PROVENCE</b></h3>
+            <p>파주프로방스에서 진행되는 다양한 이벤트로 많은 혜택을 누리세요</p>
+          </div>
+
+          <!-- swiper s -->
+          <div class="swiper-container swiper_post_list">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <!-- list_item s -->
+                  <div class="list_item">
+                    <div class="item_thumb">
+                      <img src="../../images/@temp/temp_post_img_01.jpg" alt="썸네일">
+                      <div class="btn btn_more"><span>more</span></div>
+                    </div>
+                    <div class="item_subtitle">파주 프로방스 365일 불빛 축제</div>
+                    <div class="item_post_date">2019.08.27</div>
+                  </div>
+                  <!-- //list_item e -->
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <!-- list_item s -->
+                  <div class="list_item">
+                    <div class="item_thumb">
+                      <img src="../../images/@temp/temp_sns_post_01.jpg" alt="썸네일">
+                      <div class="btn btn_more"><span>more</span></div>
+                    </div>
+                    <div class="item_subtitle">세계명화를 파주 프로방스에서 한번에 구경하세요~!</div>
+                    <div class="item_post_date">2019.08.27</div>
+                  </div>
+                  <!-- //list_item e -->
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <!-- list_item s -->
+                  <div class="list_item">
+                    <div class="item_thumb">
+                      <img src="../../images/@temp/temp_post_img_03.jpg" alt="썸네일">
+                      <div class="btn btn_more"><span>more</span></div>
+                    </div>
+                    <div class="item_subtitle">파주 프로방스 365일 불빛 축제</div>
+                    <div class="item_post_date">2019.08.27</div>
+                  </div>
+                  <!-- //list_item e -->
+                </a>
+              </li>
+            </ul>
+            <!-- Add Pagination s -->
+            <div class="swiper-pagination"></div>
+            <!-- //Add Pagination e -->
+          </div>
+          <!-- //swiper e -->
+
+          <!-- Add Arrows s -->
+          <div class="swiper-button-next swiper-post-button-next"></div>
+          <div class="swiper-button-prev swiper-post-button-prev"></div>
+          <!-- //Add Arrows e -->
+
+        </div><!-- //grid_wrap e -->
 
       </div>
       <!-- //post_list e -->
       
       <!-- sns_review s -->
       <div class="sns_review_wrap main_section">
+        
+        <div class="grid_wrap"><!-- grid_wrap s -->
 
-        <div class="main_subtitle">
-          <h3>SNS <b>REVIEW</b></h3>
-          <p>파주 프로방스를 이용해주신 고객님들의 솔직한 후기입니다.</p>
-        </div>
-        <div class="btn title_btn"><a href="#none">더 많은 파주프로방스 이용후기 보러가기</a></div>
+          <div class="main_subtitle">
+            <h3>SNS <b>REVIEW</b></h3>
+            <p>파주 프로방스를 이용해주신 고객님들의 솔직한 후기입니다.</p>
+          </div>
+          <div class="btn_wrap"><a href="../theme/sns.html" class="btn btn_square">더 많은 파주프로방스 이용후기 보러가기</a></div>
 
-        <!-- swiper s -->
-        <div class="swiper-container swiper_sns_review">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <a href="#">
-                <!-- sns_item s | sns_blog, sns_yt, sns_in, sns_fb -->
-                <div class="sns_item sns_blog">
-                  <div class="sns_info">
-                    <div class="sns_icon"></div>
-                    <div class="sns_profile"><img src="" alt="프로필사진"></div>
+          <!-- sns_list s -->
+          <div class="sns_list_wrap">
+            <ul class="sns_list">
+							<li>
+                <a href="#" target="_blank">
+                  <!-- sns_item s | sns_blog, sns_yt, sns_in, sns_fb -->
+                  <div class="sns_item sns_blog">
+                    <div class="hover_filter"></div>
+                    <div class="sns_info">
+                      <div class="sns_icon"></div>
+                      <div class="sns_profile"></div>
+                    </div>
                     <div class="sns_name">홍길동 고객님</div>
-                    <div calss="sns_underline"></div>
+                    <div class="sns_underline"></div>
+                    <div class="sns_con">파주 프로방스를 다녀와서</div>
+                    <div class="sns_txt">파주 프로방스를 다녀와서 너무 좋았어요. 애인이랑 함께 가서 프로포즈도 너무 멋있게 하였구요~ 잊지 못할 추억 선사해주셔서 감사합니다.파주 프로방스를 다녀와서 너무 좋았어요. 애인이랑 함께 가서 프로포즈도 너무 멋있게 하였구요~ 잊지 못할 추억 선사해주셔서 감사합니다.파주 프로방스를 다녀와서 너무 좋았어요.애인이랑 함께 가서 프로포즈도 너무 멋있게 하였구요~ 잊지 못할 추억 선사해주셔서 감사합니다.</div>
                   </div>
-                  <div class="sns_con">파주 프로방스를 다녀와서</div>
-                  <div class="sns_txt">파주 프로방스를 다녀와서 너무 좋았어요. 애인이랑 함께 가서 프로포즈도 너무 멋있게 하였구요~ 잊지 못할 추억 선사해주셔서 감사합니다.파주 프로방스를 다녀와서 너무 좋았어요. 애인이랑 함께 가서 프로포즈도 너무 멋있게 하였구요~ 잊지 못할 추억 선사해주셔서 감사합니다.파주 프로방스를 다녀와서 너무 좋았어요.애인이랑 함께 가서 프로포즈도 너무 멋있게 하였구요~ 잊지 못할 추억 선사해주셔서 감사합니다.</div>
-                </div>
-                <!-- //sns_item e -->
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="#">
-                <!-- sns_item s | sns_blog, sns_yt, sns_in, sns_fb -->
-                <div class="sns_item sns_yt">
-                  <div class="sns_info">
-                    <div class="sns_icon"></div>
-                    <div class="sns_profile"><img src="" alt="프로필사진"></div>
+                  <!-- //sns_item e -->
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <!-- sns_item s | sns_blog, sns_yt, sns_in, sns_fb -->
+                  <div class="sns_item sns_yt">
+                    <div class="hover_filter"></div>
+                    <div class="sns_info">
+                      <div class="sns_icon"></div>
+                      <div class="sns_profile"><img src="../../images/@temp/temp_profile_01.jpg" alt="프로필사진"></div>
+                    </div>
                     <div class="sns_name">홍길동 고객님</div>
-                    <div calss="sns_underline"></div>
+                    <div class="sns_underline"></div>
+                    <div class="sns_con">파주 프로방스를 다녀와서</div>
+                    <div class="sns_thumb"><img src="../../images/@temp/temp_sns_post_01.jpg" alt="sns사진"></div>
                   </div>
-                  <div class="sns_con">파주 프로방스를 다녀와서</div>
-                  <div class="sns_thumb"><img src="" alt="프로필사진"></div>
-                </div>
-                <!-- //sns_item e -->
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="#">
-                <!-- sns_item s | sns_blog, sns_yt, sns_in, sns_fb -->
-                <div class="sns_item sns_in">
-                  <div class="sns_info">
-                    <div class="sns_icon"></div>
-                    <div class="sns_profile"><img src="" alt="프로필사진"></div>
+                  <!-- //sns_item e -->
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <!-- sns_item s | sns_blog, sns_yt, sns_in, sns_fb -->
+                  <div class="sns_item sns_in">
+                    <div class="hover_filter"></div>
+                    <div class="sns_info">
+                      <div class="sns_icon"></div>
+                      <div class="sns_profile"><img src="../../images/@temp/temp_profile_02.jpg" alt="프로필사진"></div>
+                    </div>
                     <div class="sns_name">홍길동 고객님</div>
-                    <div calss="sns_underline"></div>
+                      <div class="sns_underline"></div>
+                    <div class="sns_con">파주 프로방스를 다녀와서 정말 정말 행복했었습니다. ^^</div>
+                    <div class="sns_thumb"><img src="../../images/@temp/temp_sns_post_02.jpg" alt="sns사진"></div>
                   </div>
-                  <div class="sns_con">파주 프로방스를 다녀와서</div>
-                  <div class="sns_thumb"><img src="" alt="프로필사진"></div>
-                </div>
-                <!-- //sns_item e -->
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="#">
-                <!-- sns_item s | sns_blog, sns_yt, sns_in, sns_fb -->
-                <div class="sns_item sns_fb">
-                  <div class="sns_info">
-                    <div class="sns_icon"></div>
-                    <div class="sns_profile"><img src="" alt="프로필사진"></div>
+                  <!-- //sns_item e -->
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <!-- sns_item s | sns_blog, sns_yt, sns_in, sns_fb -->
+                  <div class="sns_item sns_fb">
+                    <div class="hover_filter"></div>
+                    <div class="sns_info">
+                      <div class="sns_icon"></div>
+                      <div class="sns_profile"><img src="../../images/@temp/temp_profile_03.jpg" alt="프로필사진"></div>
+                    </div>
                     <div class="sns_name">홍길동 고객님</div>
-                    <div calss="sns_underline"></div>
+                    <div class="sns_underline"></div>
+                    <div class="sns_con">파주 프로방스를 다녀와서</div>
+                    <div class="sns_thumb"><img src="../../images/@temp/temp_sns_post_03.jpg" alt="sns사진"></div>
                   </div>
-                  <div class="sns_con">파주 프로방스를 다녀와서</div>
-                  <div class="sns_thumb"><img src="" alt="프로필사진"></div>
-                </div>
-                <!-- //sns_item e -->
-              </a>
-            </li>
-          </ul>
-          <div class="swiper-pagination"></div>
-        </div>
-        <!-- //swiper e -->
+                  <!-- //sns_item e -->
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- //sns_list e -->
+
+        </div><!-- grid_wrap e -->
+
       </div>
       <!-- //sns_review e -->
 
       <!-- location s -->
       <div class="location_wrap main_section">
 
-        <div class="main_subtitle">
-          <h3><b>LOCATION</b></h3>
-          <p>파주 프로방스를 보다 쉽게 찾아오실 수 있도록 안내해드립니다.</p>
-        </div>
+        <div class="grid_wrap"><!-- grid_wrap s -->
 
-        <!-- location_info_wrap s -->
-        <div class="location_info_wrap">
-          <div class="location_tel">
-            <span>단체 및 기타 문의사항</span>
-            <a href="tel:0319466353">301.946.6353</a>
+          <div class="main_subtitle">
+            <h3><b>LOCATION</b></h3>
+            <p>파주 프로방스를 보다 쉽게 찾아오실 수 있도록 안내해드립니다.</p>
           </div>
-          <div class="location_parking">
-            <div class="paking_tit">
-              <span>PARKING</span>
-              <b>파주프로방스마을 주차장 이용안내</b>
+
+          <!-- location_info_wrap s -->
+          <div  class="location_info_wrap">
+
+            <div class="location_tel">
+              <span class="title_square_b">단체 및 기타 문의사항</span>
+              <a href="tel:0319466353" class="big_point_t">031.946.6353</a>
+              <p class="location_addr">경기도 파주시 탄현면 새오리로 79-24 <br>[지번주소] 경기도 파주시 탄현면 성동리 80-10</p>
             </div>
-            <table class="table_view" summery="1회주차, 1일주차한도, 월정기권">
-              <caption>주차장이용안내</caption>
-              <colgroup><col></colgroup>
-              <tr>
-                <th scope="row" rowspan="2">구분</th>
-                <th scope="col" colspan="2">1회 주차(1구획당)</th>
-                <th scope="col" rowspan="2">1일 주차 <br>최고한도</th>
-                <th scope="col" rowspan="2">월 정기권</th>
-              </tr>
-              <tr>
-                <th scope="col">기본요금(1시간)</th>
-                <th scope="col">초과 1시간 당</th>
-              </tr>
-              <tr>
-                <th scope="row">평일</th>
-                <td>2,000원</td>
-                <td>없음</td>
-                <td>2,000원</td>
-                <td rowspan="2">80,000원</td>
-              </tr>
-              <tr>
-                <th scope="row">주말 및 공휴일</th>
-                <td>2,000원</td>
-                <td>1,000원</td>
-                <td>10,000원</td>
-              </tr>
-              <tr>
-                <th scope="row" rowspan="2">주차료<br>감면대상자</th>
-                <td><span>최조 2시간 면제 후</span>50%감면</td>
-                <td colspan="3">장애인(1~3급), 국가유공자, 고엽제후유증환자, 5.18민주유공자</td>
-              </tr>
-              <tr>
-                <td>50%감면</td>
-                <td colspan="3">장애인(1~3급), 국가유공자, 고엽제후유증환자, 5.18민주유공자</td>
-              </tr>
-            </table>
-            <p>[유의사항]</p>
-            <ol>
-              <li>1. 주차요금은 이중감면이 되지 않으며, 감면율이 높은 하나가 적용됩니다.</li>
-              <li>2. 장애인 전용구역 내 일반차량의 주차를 엄격히 금합니다.</li>
-              <li>3. 이용자가 고의 또는 과실로 주차장 시설물이나 타인차량에 재산상의 손해를 입거나 타인에게 피해를 입혔을 
-                  경우에는 가해자가 그 피해를 원상 복구하거나 그에 상당한 금액을 배상하여야 합니다.</li>
-              <li>4. 주차료 감면대상자는 관련증서를 소지하였을 때만 감면이 가능합니다.</li>
-            </ol>
+            <div class="location_parking">
+              <div class="parking_tit">
+                <span>PARKING</span><br>
+                <b>파주프로방스마을 주차장 이용안내</b>
+              </div>
+              <table class="view_table" summery="1회주차, 1일주차한도, 월정기권">
+                <caption>주차장이용안내</caption>
+                <colgroup><col></colgroup>
+                <tr>
+                  <th scope="row" rowspan="2">구분</th>
+                  <th scope="col" colspan="2">1회 주차(1구획당)</th>
+                  <th scope="col" rowspan="2">1일 주차 <br>최고한도</th>
+                  <th scope="col" rowspan="2">월 정기권</th>
+                </tr>
+                <tr>
+                  <th scope="col">기본요금(1시간)</th>
+                  <th scope="col">초과 1시간 당</th>
+                </tr>
+                <tr>
+                  <th scope="row">평일</th>
+                  <td>2,000원</td>
+                  <td>없음</td>
+                  <td>2,000원</td>
+                  <td rowspan="2">80,000원</td>
+                </tr>
+                <tr>
+                  <th scope="row">주말 및 공휴일</th>
+                  <td>2,000원</td>
+                  <td>1,000원</td>
+                  <td>10,000원</td>
+                </tr>
+                <tr>
+                  <th scope="row" rowspan="2">주차료<br>감면대상자</th>
+                  <td class="pt0"><span class="fs8x">최조 2시간 면제 후</span><br>50%감면</td>
+                  <td colspan="3" class="fs12x">장애인(1~3급), 국가유공자, 고엽제후유증환자, 5.18민주유공자</td>
+                </tr>
+                <tr>
+                  <td>50%감면</td>
+                  <td colspan="3" class="fs12x">장애인(4~6급), 모범자원봉사자, 경차(1,000CC이하), 저공해차량</td>
+                </tr>
+              </table>
+              <p class="desc_tit">[유의사항]</p>
+              <ol class="desc_con">
+                <li>1. 주차요금은 이중감면이 되지 않으며, 감면율이 높은 하나가 적용됩니다.</li>
+                <li>2. 장애인 전용구역 내 일반차량의 주차를 엄격히 금합니다.</li>
+                <li>3. 이용자가 고의 또는 과실로 주차장 시설물이나 타인차량에 재산상의 손해를 입거나 타인에게 피해를 입혔을 
+                    경우에는 가해자가 그 피해를 원상 복구하거나 그에 상당한 금액을 배상하여야 합니다.</li>
+                <li>4. 주차료 감면대상자는 관련증서를 소지하였을 때만 감면이 가능합니다.</li>
+              </ol>
+            </div>
           </div>
-        </div>
-        <!-- //location_info_wrap e -->
+          <!-- //location_info_wrap e -->
 
-        <!-- location_map_wrap s -->
-        <div class="location_map_wrap" style="display:none;">
-          <!-- Naver지도 s -->
-          <table cellpadding="0" cellspacing="0" width="462"> <tr> <td style="border:1px solid #cecece;"><a href="https://map.naver.com/?searchCoord=b3573eb7e930de4022e7e53a2fe0f41ed25568fe9411d6b47f4534cbbe9bebaf&query=7YyM7KO8IO2UhOuhnOuwqeyKpA%3D%3D&tab=1&lng=70092ca900672a599d57a4a754013e15&mapMode=0&mpx=85be92e1bfa25aef33bc9def43b326f0f78671e40e85d0d3f1c985c5dc0c90da7fd158598576227e809f7845e005312388bd04aad46c88f02a3e947d223ffc90&lat=2dcc7925abb5f188ec429040a757551e&dlevel=12&enc=b64&menu=location" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1567440223433_350442135" width="460" height="340" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td> </tr> <tr> <td> <table cellpadding="0" cellspacing="0" width="100%"> <tr> <td height="30" bgcolor="#f9f9f9" align="left" style="padding-left:9px; border-left:1px solid #cecece; border-bottom:1px solid #cecece;"> <span style="font-family: tahoma; font-size: 11px; color:#666;">2019.9.3</span>&nbsp;<span style="font-size: 11px; color:#e5e5e5;">|</span>&nbsp;<a style="font-family: dotum,sans-serif; font-size: 11px; color:#666; text-decoration: none; letter-spacing: -1px;" href="https://map.naver.com/?searchCoord=b3573eb7e930de4022e7e53a2fe0f41ed25568fe9411d6b47f4534cbbe9bebaf&query=7YyM7KO8IO2UhOuhnOuwqeyKpA%3D%3D&tab=1&lng=70092ca900672a599d57a4a754013e15&mapMode=0&mpx=85be92e1bfa25aef33bc9def43b326f0f78671e40e85d0d3f1c985c5dc0c90da7fd158598576227e809f7845e005312388bd04aad46c88f02a3e947d223ffc90&lat=2dcc7925abb5f188ec429040a757551e&dlevel=12&enc=b64&menu=location" target="_blank">지도 크게 보기</a> </td> <td width="98" bgcolor="#f9f9f9" align="right" style="text-align:right; padding-right:9px; border-right:1px solid #cecece; border-bottom:1px solid #cecece;"> <span style="float:right;"><span style="font-size:9px; font-family:Verdana, sans-serif; color:#444;">&copy;&nbsp;</span>&nbsp;<a style="font-family:tahoma; font-size:9px; font-weight:bold; color:#2db400; text-decoration:none;" href="https://www.navercorp.com" target="_blank">NAVER Corp.</a></span> </td> </tr> </table> </td> </tr> </table>
-          <!-- //Naver지도 e -->
-        </div>
-        <!-- //location_map_wrap e -->
+          <!-- location_map_wrap s -->
+          <div class="location_map_wrap">
+            <!-- Naver지도 s -->
+            <!--
+            <a href="https://map.naver.com/?searchCoord=b3573eb7e930de4022e7e53a2fe0f41ed25568fe9411d6b47f4534cbbe9bebaf&query=7YyM7KO8IO2UhOuhnOuwqeyKpA%3D%3D&tab=1&lng=e7579dd1265956abac8bc976f2adc686&mapMode=0&mpx=9b319a2c446cfdc0f6cabc008242a033b8724bd35b241395ba18228760c558be178bc38c513eee9565ef56f8b3623196&lat=0991bb590eb93962baf17f60976cb773&dlevel=12&enc=b64&menu=location&__fromRestorer=true" target="_blank">
+              <img src="../../images/main/location_mab_img.jpg" class="only_pc" alt="네이버지도">
+              <img src="../../images/main/location_mab_img_m.jpg" class="only_mo" alt="네이버지도">
+            </a>
+            -->
+            <!-- //Naver지도 e -->
+
+            <!-- 구글지도 S -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.9675696766813!2d126.6829101517768!3d37.790799779657306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8bed601105e5%3A0x37498ec5d78fe937!2z7ZSE66Gc67Cp7Iqk!5e0!3m2!1sko!2skr!4v1569110919231!5m2!1sko!2skr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <!-- //구글지도 e -->
+          </div>
+          <!-- //location_map_wrap e -->
+
+        </div><!-- grid_wrap e -->
 
       </div>
       <!-- //location e -->
@@ -475,50 +598,54 @@
     <!-- footer | 푸터영역 s -->
 		<footer class="footer">
 
-			<div class="f_cs_wrap">
-				<h5><span>고객센터</span>Contact info</h5>
-				<div class="f_cs">
-					<a href="tel:0319466353"><span>031.946.6353</span></a>
-					<p>[운영시간 안내 ▷ 연중무휴 10:00~22:30]</p>
+			<div class="grid_wrap"><!-- grid_wrap s -->
+				
+				<div class="f_cs_wrap">
+					<h5><span>고객센터</span>Contact info</h5>
+					<div class="f_cs">
+						<a href="tel:0319466353"><span>031.946.6353</span></a>
+						<p>[운영시간 안내 ▷ 연중무휴 10:00~22:30]</p>
+					</div>
 				</div>
-			</div>
 
-			<div class="f_notice_wrap">
-				<h5><span>고객센터</span>News & Notice</h5>
-				<ul class="f_notice_board">
-					<li><a href="#none">파주프로방스 홈페이지 리뉴얼되었습니다.</a></li>
-					<li><a href="#none">불빛 축제를 여름한정 개최합니다.</a></li>
-					<li><a href="#none">최고의 포토제닉은 누구??</a></li>
-				</ul>
-			</div>
-
-			<div class="f_info">
-				<ul class="f_info_select">
-					<li>
-						<select name="" id="">
-							<option value="">패밀리사이트</option>
-							<option value="">파주프로방스</option>
-							<option value="">파주프로방스</option>
-						</select>
-					</li>
-					<li>
-						<select name="" id="">
-							<option value="">파트너사이트</option>
-							<option value="">파주프로방스</option>
-							<option value="">파주프로방스</option>
-						</select>
-					</li>
-				</ul>
-				<div class="f_info_con">
-					<sapn>프로방스</span>
-					<sapn>대표:정준용</span>
-					<sapn>사업자등록번호:515-85-13547</span><br>
-					<sapn>경기도 파주시 탄현면 새오리로 77</span>
-					<sapn>대표번호:<a href="tel:0319466353">031-946-6353</a></span>
-					<sapn><a href="mailto:info@Provence.town" target="_blank"></a>info@Provence.town</span><br>
-					<p>Copyright(c) Paju Provence. All Rights Reserved.</p>
+				<div class="f_notice_wrap">
+					<h5><span>공지사항</span>News & Notice</h5>
+					<ul class="f_notice_board">
+						<li><a href="#none">파주프로방스 홈페이지 리뉴얼되었습니다.</a></li>
+						<li><a href="#none">불빛 축제를 여름한정 스페셜 울트라 초 저렴이로 개최합니다.</a></li>
+						<li><a href="#none">최고의 포토제닉은 누구??</a></li>
+					</ul>
 				</div>
-			</div>
+
+				<div class="f_info">
+					<ul class="f_info_select">
+						<li>
+							<select name="" id="" class='select_b'>
+								<option value="">파트너사이트</option>
+								<option value="">파주프로방스</option>
+								<option value="">파주프로방스</option>
+							</select>
+						</li>
+						<li>
+							<select name="" id="" class='select_b'>
+								<option value="">패밀리사이트</option>
+								<option value="">파주프로방스</option>
+								<option value="">파주프로방스</option>
+							</select>
+						</li>						
+					</ul>
+					<div class="f_info_con">
+						<span>프로방스</span>
+						<span class="div_h">대표:정준용</span>
+						<span class="div_h">사업자등록번호:515-85-13547</span><br>
+						<span>경기도 파주시 탄현면 새오리로 77</span><br class="only_mo">
+						<span class="div_h div_h_mo">대표번호:<a href="tel:0319466353">031-946-6353</a></span>
+						<span class="div_h"><a href="mailto:info@Provence.town" target="_blank"></a>info@Provence.town</span><br>
+						<p>Copyright(c) Paju Provence. All Rights Reserved.</p>
+					</div>
+				</div>
+
+			</div><!-- //grid_wrap e -->
 
 		</footer>
     <!-- //footer | 푸터영역 e -->
@@ -533,9 +660,9 @@
 <div class="bottom">
 
 	<!-- top_btn | 탑버튼 s -->
-	<a href="#" class="top_btn upper">TOP</a>
+	<a href="#" class="top_btn upper"><span>TOP</span></a>
 	<!-- //top_btn | 탑버튼 e -->
-	
+
 </div>
 <!-- //bottom e -->
 
@@ -566,7 +693,7 @@
 <!-- //script_include e -->
 <script type="text/javascript" src="../../js/main.js"></script>
 <script>
-  $(function() {  
+  $(document).ready(function(){
   
   }); 
 </script>

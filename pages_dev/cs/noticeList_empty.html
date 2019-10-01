@@ -1,0 +1,133 @@
+<!-- @@master ../../layout_template.html -->
+
+<!-- @@block root_content -->
+
+<!-- top -->
+<!-- @@include ../../include_dev/top.html -->
+<!-- //top e -->
+
+<!-- wrapper | 페이지영역 s -->
+<div class="wrapper">
+  
+  <!-- page_wrap | 컨데이너영역 s -->
+  <div class="container pg_notice_list"><!-- pg_notice_list : 페이지 고유클래스 -->
+
+    <!-- header | 헤더영역 s -->
+    <!-- @@include ../../include_dev/header.html -->
+    <!-- //header | 헤더영역 e -->
+
+    <!-- contents | 컨텐츠영역 s -->
+    <div id="contents" class="contents" tabIndex="0">
+      
+      <!-- subpg_title s -->
+      <div class="subpg_title_wrap">
+        <div class="subpg_title_filter"></div>
+        <div class="grid_wrap"><!-- grid_wrap s -->
+          
+          <h2 class="subpg_tit">공지사항</h2>
+
+          <!-- breadcrumb s -->
+          <ul class="breadcrumb_wrap">
+            <li class="brd_d1"><a href="#none"><span>Home</span></a></li>
+            <li class="brd_d2"><a href="#none"><span>고객센터</span></a></li>
+            <li class="brd_d3">
+              <a href="#none" class="leef"><span>공지사항</span></a>
+              <ul class="brd_select">
+                <li><a href="#none"><span>공지사항</span></a></li>
+                <li><a href="#none"><span>이벤트</span></a></li>
+                <li><a href="#none"><span>자주묻는질문</span></a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="sns_quick_menu">
+            <li class="sns_q_fb"><a href="#none"><span>Facebook</span></a></li>
+            <li class="sns_q_in"><a href="#none"><span>Instagram</span></a></li>
+            <li class="sns_q_blog"><a href="#none"><span>Blog</span></a></li>        
+            <li class="sns_q_prt"><a href="#none"><span>Print</span></a></li>
+          </ul>
+          <!-- //breadcrumb e -->
+
+        </div><!-- //grid_wrap e -->        
+
+      </div>
+      <!-- //subpg_title e -->
+      
+      <div class="grid_wrap"><!-- grid_wrap s -->
+
+        <!-- subpg_contents s -->
+        <h3 class="subpg_con_tit">공지사항</h3>
+        <p class="subpg_con_tit_desc">프로방스 마을의 따끈따끈한 새로운 소식을 알려드립니다. 특별한 기회와 행운을 놓치지 마세요.</p>
+
+        <div class="subpg_contents">
+          
+          <!-- search_wrap s -->
+          <div class="search_wrap">
+            <select name="" id="" class="select_w search_condition">
+              <option value="all">전체</option>
+              <option value="01">공지</option>
+              <option value="02">전시</option>
+            </select>
+            <div class="keyword_box">
+              <input type="search" class="keyword_input" placeholder="검색어를 입력하세요">
+              <a href="#none" class="search_btn"><span>검색</span></a>
+            </div>
+          </div>
+          <!-- //search_wrap s -->
+
+          <!-- board_list s -->
+          <ul class="board_list">
+            <li>
+              <a href="noticeView.html">
+                <!-- list_item s -->
+                <div class="list_item no_item">
+                  등록된 게시글이 없습니다.
+                </div>
+                <!-- //list_item e -->
+              </a>
+            </li>
+          </ul>
+          <!-- //board_list e -->
+
+          <!-- paging_box_wrap s -->
+          <!-- @@include ../../include_dev/inc_paging_box.html -->
+          <!-- //paging_box_wrap e -->
+
+        </div>
+        <!-- //subpg_contents e -->
+
+      </div><!-- //grid_wrap e -->
+
+    </div>
+    <!-- //contents | 컨텐츠영역 e -->
+
+    <!-- footer | 푸터영역 s -->
+    <!-- @@include ../../include_dev/footer.html -->
+    <!-- //footer | 푸터영역 e -->
+
+  </div>
+  <!-- //page_wrap | 컨테이너영역 E -->
+
+</div>
+<!-- //wrapper e -->
+
+<!-- bottom s -->
+<!-- @@include ../../include_dev/bottom.html -->
+<!-- //bottom e -->
+
+<!-- layer_popup s -->
+<!-- @@include ../../include_dev/layer_popup_content.html -->
+<!-- //layer_popup e -->
+
+<!-- quick_menu s -->
+<!-- include ../../include_dev/quick_menu.html -->
+<!-- //quick_menu e -->
+
+<!-- script_include s -->
+<!-- @@include ../../include_dev/script_include.html -->
+<!-- //script_include e -->
+<script>
+  $(document).ready(function(){
+  
+  }); 
+</script>
+<!-- @@close -->

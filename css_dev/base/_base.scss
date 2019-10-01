@@ -8,7 +8,7 @@
 /* base s =================================================== */
 * {
 	@include bxzb;
-	//outline: none;
+	outline: none;
 	//font-weight: normal;
 	font-style: normal;
 }
@@ -23,7 +23,7 @@ body {
 	position:relative;
 	-webkit-font-smoothing: antialiased;
 	font: {
-	      family:$default_font, 'malgun gothic', Dotum ,Gulim, Helvetica, sans-serif;
+	      family:$default_font, $second_font, 'malgun gothic', Dotum ,Gulim, Helvetica, sans-serif;
 	      /*family: 'Lato', sans-serif;*/
 				/*family: 'Nanum Gothic', sans-serif;*/
 				/*family: 'Nanum Myeongjo', serif;*/

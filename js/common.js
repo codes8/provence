@@ -21,10 +21,10 @@ function checkScreen() { //screen size 체크
 	}
 	*/
 	if($(window).width()<$(window).height()){ //세로
-		console.log("세로모드 : "+$(window).width()+" / "+screen.availHeight);
+		//console.log("세로모드 : "+$(window).width()+" / "+screen.availHeight);
 		$('.tagMotionBox').css('height','100%')
 	}else if($(window).width()>$(window).height()){ //가로
-		console.log("가로모드 : "+$(window).width()+" / "+$(window).height());
+		//console.log("가로모드 : "+$(window).width()+" / "+$(window).height());
 		$('.tagMotionBox').css('height','initial')
 	}
 	//css media query 기준과 동일하게 
@@ -175,5 +175,8 @@ function chkEffwInview(){ //스크롤 위치 확인
 	});
 }
 /*----------------------------------------------------------- */
+/* ready s -------------------------------------------------- */
 $(document).ready(function(){
 });	
+/* ready e -------------------------------------------------- */
+/*----------------------------------------------------------- */
