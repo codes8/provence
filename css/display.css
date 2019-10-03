@@ -175,7 +175,7 @@ select::-ms-expand { display: none; }
 
 .board_list .list_item .li_date { margin-top: 40px; margin-left: 60px; width: 10%; }
 
-.board_list .list_item .li_date .day_wrap { width: 50px; font-family: "Lato"; line-height: 3em; }
+.board_list .list_item .li_date .day_wrap { width: 50px; font-family: "GodoM"; line-height: 3em; }
 
 .board_list .list_item .li_date .day_wrap .day { float: left; font-weight: 700; font-size: 4.4em; }
 
@@ -185,7 +185,7 @@ select::-ms-expand { display: none; }
 
 .board_list .list_item .li_img img { width: 100%; }
 
-.board_list .list_item .li_num { width: 95%; font-family: "Lato"; font-size: 1.5em; color: #8dbb6a; }
+.board_list .list_item .li_num { width: 95%; font-family: "GodoM"; font-size: 1.5em; color: #8dbb6a; }
 
 .board_list .list_item .li_num .li_period { display: inline; color: #333; }
 
@@ -357,7 +357,7 @@ select::-ms-expand { display: none; }
 
 .paging_box_wrap .paging_box .num_btn { margin: 0; }
 
-.paging_box_wrap .paging_box .num_btn a { display: block; width: 100%; height: 100%; font-family: "Lato"; font-size: 1.8em; font-weight: normal; /*color:#666;*/ color: #484848; }
+.paging_box_wrap .paging_box .num_btn a { display: block; width: 100%; height: 100%; font-family: "GodoM"; font-size: 1.8em; font-weight: normal; /*color:#666;*/ color: #484848; }
 
 .paging_box_wrap .paging_box .abL, .paging_box_wrap .paging_box .abLL, .paging_box_wrap .paging_box .abR, .paging_box_wrap .paging_box .abRR { margin: 0; text-indent: -5000px; font-size: 0; }
 
@@ -393,7 +393,7 @@ select::-ms-expand { display: none; }
 
 .slide_list_wrap .slide_list li:first-child { border-top: 1px solid #ddd; }
 
-.slide_list_wrap .slide_list li .sl_item .sl_num { float: left; width: 50px; font-family: "Lato"; font-weight: 700; font-size: 4.4em; color: #57823a; text-align: center; }
+.slide_list_wrap .slide_list li .sl_item .sl_num { float: left; width: 50px; font-family: "GodoM"; font-weight: 700; font-size: 4.4em; color: #57823a; text-align: center; }
 
 .slide_list_wrap .slide_list li .sl_item .sl_num span { float: left; font-size: 12px; color: #666; }
 
@@ -505,7 +505,7 @@ select::-ms-expand { display: none; }
 
 .title_square_b { margin-right: 10px; padding: 10px 20px; font-weight: 700; font-size: 1.8em; color: #fff; background: #323232; }
 
-.big_point_t { font-family: "Lato"; font-weight: 900 !important; font-size: 4em; color: #8dbb6a !important; letter-spacing: 0.025em; line-height: 40px; }
+.big_point_t { font-family: "GodoM"; font-weight: 900 !important; font-size: 4em; color: #8dbb6a !important; letter-spacing: 0.025em; line-height: 40px; }
 
 .breadcrumb_wrap { height: 55px; background: #fff; border-bottom: 1px solid #ddd; }
 
@@ -632,7 +632,7 @@ select::-ms-expand { display: none; }
 
 .main_section .main_subtitle { margin-bottom: 30px; }
 
-.main_section .main_subtitle h3 { padding-top: 80px; padding-bottom: 10px; font-family: "Lato"; font-weight: 300; font-size: 3.6em; text-align: center; }
+.main_section .main_subtitle h3 { padding-top: 80px; padding-bottom: 10px; font-family: "GodoM"; font-weight: 300; font-size: 3.6em; text-align: center; }
 
 .main_section .main_subtitle p { padding-top: 10px; font-size: 1.4em; text-align: center; }
 
@@ -705,7 +705,7 @@ select::-ms-expand { display: none; }
 
 .location_info_wrap .location_parking .parking_tit { margin-bottom: 5px; padding-top: 5px; padding-left: 65px; height: 57px; background: url("../images/main/icon_parking.png") no-repeat; }
 
-.location_info_wrap .location_parking .parking_tit span { font-family: "Lato"; font-size: 1.4em; color: #8dbb6a; }
+.location_info_wrap .location_parking .parking_tit span { font-family: "GodoM"; font-size: 1.4em; color: #8dbb6a; }
 
 .location_info_wrap .location_parking .parking_tit b { font-size: 2em; }
 
@@ -739,11 +739,22 @@ select::-ms-expand { display: none; }
 
 .subpg_title_wrap .grid_wrap { position: relative; }
 
-.subpg_title_wrap .subpg_title_filter { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: transparent; background-color: rgba(0, 0, 0, 0.5); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#222',endColorstr='#222'); zoom: 1; z-index: 0; }
+.subpg_title_wrap .subpg_title_bgimg_wrap, .subpg_title_wrap .subpg_title_filter { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: transparent; background-color: rgba(0, 0, 0, 0.5); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#222',endColorstr='#222'); zoom: 1; }
 
-.subpg_title_wrap .subpg_tit { padding: 100px 0; font-weight: 700; font-size: 3.6em; color: #fff; letter-spacing: -0.05em; text-align: center; }
+.subpg_title_wrap .subpg_title_bgimg_wrap { overflow: hidden; z-index: 0; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .subpg_title_wrap .subpg_tit { padding: 40px; font-size: 3em; text-align: left; } }
+.subpg_title_wrap .subpg_title_filter { z-index: 0; }
+
+.subpg_title_wrap .subpg_title_bgimg { position: absolute; top: 0; left: 0; width: 100%; }
+
+.subpg_title_wrap .subpg_title_bgimg img { min-width: 100%; height: auto; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .subpg_title_wrap .subpg_title_bgimg { position: absolute; top: 50%; left: 50%; margin-top: -150px; margin-left: -960px; }
+  .subpg_title_wrap .subpg_title_bgimg img { width: unset; } }
+
+.subpg_title_wrap .subpg_tit { padding: 100px 0; font-family: "GodoM"; font-size: 3.6em; color: #fff; letter-spacing: -0.05em; text-align: center; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .subpg_title_wrap .subpg_tit { padding: 40px 150px 40px 40px; word-break: break-all; font-size: 3em; text-align: left; } }
 
 .pg_introduce .subpg_title_wrap, .pg_guidemap .subpg_title_wrap, .pg_directions .subpg_title_wrap { background: url("../images/pages/sub_provence_top_bg.jpg"); background-size: cover; }
 
@@ -755,9 +766,13 @@ select::-ms-expand { display: none; }
 
 .pg_notice_list .subpg_title_wrap, .pg_notice_view .subpg_title_wrap, .pg_event_list .subpg_title_wrap, .pg_event_view .subpg_title_wrap, .pg_faq .subpg_title_wrap { background: url("../images/pages/sub_cs_top_bg.jpg"); background-size: cover; }
 
-.subpg_con_tit { margin-top: 70px; margin-bottom: 20px; font-size: 4em; font-weight: 700; color: #333; }
+.subpg_con_tit { margin-top: 70px; margin-bottom: 20px; font-family: "GodoM"; font-size: 4em; color: #333; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .subpg_con_tit { padding-right: 20px; padding-left: 20px; margin-top: 60px; margin-bottom: 15px; font-size: 3em; } }
+
+.lang_eng, .lang_chn { font-family: "Noto Sans"; }
+
+.lang_eng .subpg_con_tit, .lang_eng .big_point_t, .lang_chn .subpg_con_tit, .lang_chn .big_point_t { font-family: "Noto Sans"; font-weight: 700; }
 
 .subpg_con_tit_desc { font-size: 1.8em; line-height: 30px; color: #666; }
 
@@ -770,12 +785,12 @@ select::-ms-expand { display: none; }
 
 .pg_introduce .subpg_contents { font-size: 2em; text-align: center; }
 
-.pg_introduce .subpg_contents img { margin-bottom: 60px; }
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .pg_introduce .subpg_contents { font-size: 1.8em; }
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .pg_introduce .subpg_contents { padding-bottom: 0; font-size: 1.8em; }
   .pg_introduce .subpg_contents > p { padding-right: 20px; padding-left: 20px; line-height: 28px; } }
 
-.provence_info { position: relative; padding: 100px 40px 50px 70px; border: 1px solid #ccc; text-align: left; }
+.provence_info { position: relative; margin-top: 60px; padding: 100px 40px 50px 70px; min-height: 552px; border: 1px solid #ccc; text-align: left; }
+
+.provence_info .prvi_txt { max-width: 450px; }
 
 .provence_info .prvi_txt h4 { margin-bottom: 30px; font-size: 2em; color: #000; }
 
@@ -791,11 +806,19 @@ select::-ms-expand { display: none; }
 
 .provence_info .prvi_time .time_wrap { position: absolute; bottom: 65px; right: 60px; font-weight: 700; font-size: 60px; color: #986439; text-align: center; }
 
-.provence_info .prvi_time .time_wrap .open, .provence_info .prvi_time .time_wrap .divs, .provence_info .prvi_time .time_wrap .close { font-family: "Lato"; line-height: 55px; }
+.provence_info .prvi_time .time_wrap .open, .provence_info .prvi_time .time_wrap .divs, .provence_info .prvi_time .time_wrap .close { font-family: "GodoM"; line-height: 55px; }
 
 .provence_info .prvi_time .time_wrap .desc { margin-top: 30px; font-size: 24px; color: #333; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .provence_info { padding: 0 20px 0 20px; border: 0; }
+.provence_info .prvi_time_2 { position: absolute; bottom: 55px; right: 40px; width: 570px; height: 403px; background: url("../images/pages/sub_con_intro_03_2.png"); }
+
+.provence_info .prvi_time_2 .time_wrap { position: absolute; bottom: 65px; right: 84px; font-family: "Noto Sans"; font-weight: 700; font-size: 60px; color: #114866; text-align: center; }
+
+.provence_info .prvi_time_2 .time_wrap .open, .provence_info .prvi_time_2 .time_wrap .divs, .provence_info .prvi_time_2 .time_wrap .close { font-family: "GodoM"; line-height: 55px; }
+
+.provence_info .prvi_time_2 .time_wrap .desc { margin-top: 30px; font-size: 24px; color: #333; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .provence_info { margin-top: 80px; padding: 0 20px 0 20px; min-height: unset; border: 0; }
   .provence_info .prvi_txt h4 { font-size: 30px; }
   .provence_info .prvi_txt p, .provence_info .prvi_txt b { font-size: 20px; }
   .provence_info .prvi_desc li { font-size: 16px; }
@@ -803,7 +826,15 @@ select::-ms-expand { display: none; }
   .provence_info .prvi_time { position: relative; margin-left: -180px; bottom: 55px; right: unset; left: 50%; width: 360px; height: 223px; background-size: cover; }
   .provence_info .prvi_time .time_wrap { font-size: 42px; right: 30px; bottom: 35px; }
   .provence_info .prvi_time .time_wrap .open, .provence_info .prvi_time .time_wrap .divs, .provence_info .prvi_time .time_wrap .close { line-height: 40px; }
-  .provence_info .prvi_time .time_wrap .desc { margin-top: 15px; font-size: 16px; } }
+  .provence_info .prvi_time .time_wrap .desc { margin-top: 15px; font-size: 16px; }
+  .provence_info .prvi_time_2 { position: relative; margin-left: -180px; bottom: 55px; right: unset; left: 50%; width: 360px; height: 255px; background-size: cover; }
+  .provence_info .prvi_time_2 .time_wrap { font-size: 42px; right: 45px; bottom: 35px; }
+  .provence_info .prvi_time_2 .time_wrap .open, .provence_info .prvi_time_2 .time_wrap .divs, .provence_info .prvi_time_2 .time_wrap .close { line-height: 40px; }
+  .provence_info .prvi_time_2 .time_wrap .desc { margin-top: 15px; font-size: 16px; } }
+
+.lang_eng .provence_info .prvi_txt, .lang_chn .provence_info .prvi_txt { max-width: 500px; }
+
+.lang_eng .provence_info .prvi_txt h4, .lang_chn .provence_info .prvi_txt h4 { font-weight: 700; font-size: 36px; letter-spacing: -0.05em; line-height: auto; }
 
 .pg_guidemap .img_guidemap, .pg_guidemap .map_info { float: left; width: 100%; border: 2px solid #ddd; }
 
@@ -817,7 +848,7 @@ select::-ms-expand { display: none; }
 
 .map_info_item .mpin_tit { padding: 20px 20px 20px 90px; text-align: left; border-bottom: 1px solid #ddd; }
 
-.map_info_item .mpin_tit span { font-family: "Lato"; font-size: 1.4em; color: #989898; }
+.map_info_item .mpin_tit span { font-family: "GodoM"; font-size: 1.4em; color: #989898; }
 
 .map_info_item .mpin_tit h5 { font-size: 1.8em; color: #383838; }
 
@@ -825,7 +856,7 @@ select::-ms-expand { display: none; }
 
 .map_info_item .mpin_list > li { float: left; padding: 10px 0; width: 100%; line-height: 18px; font-size: 1.6em; }
 
-.map_info_item .mpin_list > li > span { float: left; margin-right: 10px; width: 18px; height: 18px; line-height: 18px; font-family: "Lato"; font-size: 10px; color: #fff; text-align: center; border-radius: 9px; }
+.map_info_item .mpin_list > li > span { float: left; margin-right: 10px; width: 18px; height: 18px; line-height: 18px; font-family: "GodoM"; font-size: 10px; color: #fff; text-align: center; border-radius: 9px; }
 
 .map_info_item.map_info_item1 .mpin_tit { background: #eee url("../images/pages/icon_food.png") no-repeat 35px 50%; }
 
@@ -864,7 +895,7 @@ select::-ms-expand { display: none; }
 
 .direction_info { float: left; clear: both; margin-top: 40px; width: 100%; }
 
-.direction_info li .direc_item .dii_tit, .direction_info li .direc_item .dii_con { float: left; padding-top: 30px; padding-bottom: 30px; height: 80px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+.direction_info li .direc_item .dii_tit, .direction_info li .direc_item .dii_con { float: left; padding-top: 30px; padding-bottom: 30px; height: 80px; line-height: initial; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
 
 .direction_info li .direc_item .dii_tit { width: 25%; padding-left: 85px; font-size: 1.8em; }
 
@@ -880,6 +911,10 @@ select::-ms-expand { display: none; }
   .direction_info li .direc_item .dii_tit, .direction_info li .direc_item .dii_con { width: 100%; height: unset; }
   .direction_info li .direc_item .dii_tit { padding: 10px 10px 10px 50px; background-position-x: 12px; border-bottom: 0; }
   .direction_info li .direc_item .dii_con { padding: 20px 20px 40px 20px; line-height: 24px; border-bottom: 0; } }
+
+.lang_eng .direction_info li .direc_item .dii_con, .lang_chn .direction_info li .direc_item .dii_con { font-size: 1.4em; padding-top: 20px; padding-right: 20px; }
+
+.lang_eng .direction_info li:first-child .direc_item .dii_con, .lang_chn .direction_info li:first-child .direc_item .dii_con { padding-top: 30px; }
 
 .pg_tower_list .thumb_list_wrap { width: 100%; }
 
@@ -903,7 +938,7 @@ select::-ms-expand { display: none; }
 
 .tab_list_wrap .tab_list > li { display: inline-block; width: 12%; }
 
-.tab_list_wrap .tab_list > li a { font-family: "Lato"; font-weight: 700; font-size: 2.4em; }
+.tab_list_wrap .tab_list > li a { font-family: "GodoM"; font-weight: 700; font-size: 2.4em; }
 
 .tab_list_wrap .tab_list > li a span { display: inline-block; width: 45px; height: 45px; line-height: 45px; text-align: center; border-radius: 22px; background: #eee; }
 

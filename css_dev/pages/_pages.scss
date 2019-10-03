@@ -10,24 +10,49 @@
 .subpg_title_wrap {
 	position:relative;
 	.grid_wrap {position:relative;}
+	.subpg_title_bgimg_wrap,
 	.subpg_title_filter {
 		@include posa_tl(0,0);
     width:100%;
     height:100%;
     @include box-rgba(0,0,0,0.5,$black);
-    z-index:0;
+	}
+	.subpg_title_bgimg_wrap {
+		overflow:hidden;
+		z-index:0;
+	}
+	.subpg_title_filter {
+		z-index:0;
+	}
+	.subpg_title_bgimg {
+		@include posa_tl(0,0);
+		width:100%;
+		img {
+			min-width:100%;
+			height:auto;
+		}
+		@include media-screen {
+			@include posa_tl(50%,50%);
+			margin-top:-150px;
+			margin-left:-960px;
+			img {
+				width:unset;
+			}
+		}
 	}
 	.subpg_tit {
 		padding:100px 0;
 		font:{
-			weight:$fwB;
+			family:$second_font;
+			//weight:$fwB;
 			size:3.6em;
 		};
 		color:#fff;
 		letter-spacing:-0.05em;
 		text-align:center;
 		@include media-screen {
-			padding:40px;
+			padding:40px 150px 40px 40px;
+			word-break:break-all;
 			font-size:3em;
 			text-align:left;
 		}
@@ -80,8 +105,9 @@
 .subpg_con_tit {
 	margin-top:70px;
 	margin-bottom:20px;
+	font-family:$second_font;
 	font-size:4em;
-	font-weight:$fwB;
+	//font-weight:$fwB;
 	color:$default_fc;
 	@include media-screen {
 		@include setMoDfPadding();
@@ -90,6 +116,15 @@
 		font-size:3em;
 	}
 }
+@include lang_all {
+	font-family:$third_font;
+	.subpg_con_tit,
+	.big_point_t {
+		font-family:$third_font;
+		font-weight:$fwB;
+	}
+}
+
 .subpg_con_tit_desc {
 	font-size:1.8em;
 	line-height:30px;
@@ -125,9 +160,10 @@
 		font-size:2em;
 		text-align:center;
 		img {
-			 margin-bottom:60px;
+			 //margin-bottom:60px;
 		}
 		@include media-screen {
+			padding-bottom:0;
 			font-size:1.8em;
 			> p {
 				@include setMoDfPadding();
@@ -141,10 +177,13 @@
 }
 .provence_info {
 	position:relative;
+	margin-top:60px;
 	padding:100px 40px 50px 70px;
+	min-height:552px;
 	border:1px solid $border_clr4;
 	text-align:left;
 	.prvi_txt {
+		max-width:450px;
 		h4 {
 			margin-bottom:30px;
 			font-size:2em;
@@ -193,8 +232,35 @@
 			}
 		}
 	}
+	.prvi_time_2 {
+		@include posa_br(55px,40px);
+		width:570px;
+		height:403px;
+		background:url("#{$img_url}#{$img_pages_url}sub_con_intro_03_2.png");
+		.time_wrap {
+			@include posa_br(65px,84px);
+			font-family:$third_font;
+			font-weight:$fwB;
+			font-size:60px;
+			color:#114866;			
+			text-align:center;
+			.open,
+			.divs,
+			.close {
+				font-family:$second_font;
+				line-height:55px;
+			}
+			.desc {
+				margin-top:30px;
+				font-size:24px;
+				color:$default_fc;
+			}
+		}
+	}
 	@include media-screen {
+		margin-top:80px;
 		padding:0 20px 0 20px;
+		min-height:unset;
 		border:0;
 		.prvi_txt {
 			h4 {
@@ -236,9 +302,45 @@
 				}
 			}
 		}
+		.prvi_time_2 { 
+			position:relative;
+			margin-left:-180px;
+			bottom:55px;
+			right:unset;
+			left:50%;
+			width:360px;
+			height:255px;
+			background-size:cover;
+			.time_wrap {
+				font-size:42px;
+				right:45px;
+				bottom:35px;
+				.open,
+				.divs,
+				.close {
+					line-height:40px;
+				}
+				.desc {
+					margin-top:15px;
+					font-size:16px;
+				}
+			}
+		}
 	}
 }
-
+@include lang_all {
+	.provence_info {
+		.prvi_txt {
+			max-width:500px;
+			h4 {
+				font-weight:$fwB;
+				font-size:36px;
+				letter-spacing: -0.05em;
+				line-height:auto;
+			}
+		}
+	}
+}
 //프로방스 > 단지 안내
 .pg_guidemap {
 	.img_guidemap,
@@ -422,6 +524,7 @@
 				padding-top:30px;
 				padding-bottom:30px;
 				height:80px;
+				line-height:initial;
 				border-top:1px solid $border_clr2;
 				border-bottom:1px solid $border_clr2;
 			}
@@ -476,6 +579,26 @@
 		}
 	}
 }
+@include lang_all {
+	.direction_info {
+		li {
+			.direc_item {
+				.dii_con {
+					font-size:1.4em;
+					padding-top:20px;
+					padding-right:20px;
+				}
+			}
+			&:first-child {
+				.direc_item {
+					.dii_con {
+						padding-top:30px;
+					}
+				}
+			}
+		}
+	}
+}
 
 //주차타워
 .pg_tower_list {
@@ -513,9 +636,7 @@
 }
 
 .tab_list_wrap {
-	
 	width:100%;
-	
 	.tab_list {
 		padding:18px 0px 17px 60px;
 		width:100%;

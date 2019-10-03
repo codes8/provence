@@ -71,6 +71,20 @@ $(document).ready(function(){
     }
 		//parallax: true
 	});
+
+	/* main_popup */
+	$(document).on('click','.btn_mpp_close',function(){
+		$(this).parents('.main_popup').addClass('dN');
+		var idx_pop_langth=0;
+		$('.main_popup_wrap .main_popup').each(function(idx,item){
+			if($(this).is(':visible')){
+				idx_pop_langth++;;
+			}
+		});
+		if(idx_pop_langth < 1){
+			$('.main_popup_wrap').addClass('dN');
+		}
+	});
 });	
 /* ready e -------------------------------------------------- */
 /*----------------------------------------------------------- */

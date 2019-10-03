@@ -6,6 +6,51 @@
 // ========================================================== */
 /* ---------------------------------------------------------- */
 /* popup s ================================================== */
-
+.main_popup_wrap {
+	@include posa_tl(147px, 0);
+  width:100%;
+  height:100%;
+  //@include box-rgba(0,0,0,0.5,$black);
+  z-index:100;
+  @include media-screen {
+  	top:60px;
+  }
+}
+.main_popup {
+	float:left;
+	display:inline-block;
+	.mpp_top {
+		float:left;
+		width:100%;
+	}
+	.mpp_mid {
+		width:100%;
+		img {
+			@include media-screen {
+				width:100%;
+			}
+		}
+	}
+	.mpp_btm {
+		float:left;
+		width:100%;
+		padding:8px 20px;
+		font-size:1rem;
+		background:$white_gray;
+		.close {
+			float:left;
+		}
+		label {
+			float:right;
+			cursor:pointer;
+		}
+		.chk_today {
+			width:15px;
+			height:15px;
+			border:1px solid $border_clr3;
+			@include css3-prefix(appearance, checkbox);
+		}
+	}
+}
 /* popup e ================================================== */
 /* ---------------------------------------------------------- */

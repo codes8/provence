@@ -167,6 +167,21 @@
 			@content;
 		}
 }
-
+@mixin lang_all {
+	.lang_eng,
+	.lang_chn {
+		@content;
+	}
+}
+@mixin eng {
+	.lang_eng {
+		@content;
+	}
+}
+@mixin chn {
+	.lang_chn {
+		@content;
+	}
+}
 // mixin e ================================================== */
 // ---------------------------------------------------------- */
