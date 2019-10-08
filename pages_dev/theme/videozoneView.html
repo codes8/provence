@@ -10,7 +10,7 @@
 <div class="wrapper">
   
   <!-- page_wrap | 컨데이너영역 s -->
-  <div class="container pg_sns_review"><!-- pg_sns_review : 페이지 고유클래스 -->
+  <div class="container pg_photozone_view"><!-- pg_photozone_view : 페이지 고유클래스 -->
 
     <!-- header | 헤더영역 s -->
     <!-- @@include ../../include_dev/header.html -->
@@ -35,14 +35,14 @@
         
         <div class="grid_wrap"><!-- grid_wrap s -->
 
-          <h2 class="subpg_tit">SNS리뷰</h2>
+          <h2 class="subpg_tit">비디오존</h2>
 
           <!-- breadcrumb s -->
           <ul class="breadcrumb_wrap">
             <li class="brd_d1"><a href="#none"><span>Home</span></a></li>
             <li class="brd_d2"><a href="#none"><span>힐링테마</span></a></li>
             <li class="brd_d3">
-              <a href="#none" class="leef"><span>SNS리뷰</span></a>
+              <a href="#none" class="leef"><span>비디오존</span></a>
               <ul class="brd_select">
                 <li><a href="#none"><span>포토존</span></a></li>
                 <li><a href="#none"><span>비디오존</span></a></li>
@@ -66,27 +66,55 @@
       <div class="grid_wrap"><!-- grid_wrap s -->
 
         <!-- subpg_contents s -->
-        <h3 class="subpg_con_tit">SNS리뷰</h3>
-        <p class="subpg_con_tit_desc">파주프로방스를 이용해주신 고객님들의 솔직한 후기입니다.</p>
+        <h3 class="subpg_con_tit">비디오존</h3>
+        <p class="subpg_con_tit_desc">수많은 인기 드라마나 영화 등의 배경으로 소개된 프로방스마을의 영상들입니다.<br class="only_pc"> 잠깐 아름다운 장면 속의 주인공이 되어보세요.</p>
 
         <div class="subpg_contents">
-          
-          <!-- sns_list s -->
-          <div class="sns_list_wrap">
-            <ul class="sns_list">
+           
+          <!-- thumb_view_wrap s -->
+          <div class="view_wrap">
+
+            <div class="view_subject">아름답게 수 놓는 전등거리</div>
+
+            <div class="view_head">
+              <span class="write_date">작성일 : 2019.08.27</span>
+              <span class="inquiry_tel">문의처 : <b>031.946.6353</b> </span>
+            </div>
+
+            <div class="view_body web_eidtor_wrap"><!-- web_editor_area s -->
+
+             <!-- youtube_area s -->
+              <div class="youtube_area">
+                <iframe id="player" width="100%" height="320" src="https://www.youtube.com/embed/UM8b7uki28s?controls=0&fs=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <!-- //youtube_area e -->
               
-              <!-- @@include ../../include_dev/inc_sns_list_box.html -->
-              <!-- @@include ../../include_dev/inc_sns_list_box.html -->
-              <!-- @@include ../../include_dev/inc_sns_list_box.html -->
-              <!-- @@include ../../include_dev/inc_sns_list_box.html -->
+            </div><!-- web_editor_area e -->
 
-            </ul>
+            <div class="view_footer btn_wrap">
+              <div class="btn_arrow_view prev_btn">
+                <a href="#none" class="btn btn_arrow_square_l efc_btn_1">
+                  <span>이전글버튼</span>
+                </a>
+                <div class="btn_prev_view_info">
+                  <span>이전글</span>
+                  <p>파주 프로방스 사이트가 오픈되었습니다. </p>
+                </div>
+              </div>
+              <a href="photozoneList.html" class="btn btn_dot_square efc_btn_1">목록</a>
+              <div class="btn_arrow_view next_btn">
+                <div class="btn_next_view_info">
+                  <span>다음글</span>
+                  <p>파주 프로방스 사이트가 오픈되었습니다.</p>
+                </div>
+                <a href="#none" class="btn btn_arrow_square_r efc_btn_1">
+                  <span>다음글버튼</span>
+                </a>
+              </div>
+            </div>
+            
           </div>
-          <!-- //sns_list e -->
-
-          <!-- paging_box_wrap s -->
-          <!-- @@include ../../include_dev/inc_paging_box.html -->
-          <!-- //paging_box_wrap e -->
+          <!-- //thumb_view_wrap e -->
 
         </div>
         <!-- //subpg_contents e -->
@@ -126,4 +154,4 @@
   
   }); 
 </script>
-<!-- @@close
+<!-- @@close -->

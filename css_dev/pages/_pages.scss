@@ -159,8 +159,8 @@
 	.subpg_contents {
 		font-size:2em;
 		text-align:center;
-		img {
-			 //margin-bottom:60px;
+		img:nth-child(1) {
+			 margin-bottom:30px;
 		}
 		@include media-screen {
 			padding-bottom:0;
@@ -524,6 +524,7 @@
 				padding-top:30px;
 				padding-bottom:30px;
 				height:80px;
+				line-height:18px;
 				line-height:initial;
 				border-top:1px solid $border_clr2;
 				border-bottom:1px solid $border_clr2;

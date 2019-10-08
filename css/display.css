@@ -102,6 +102,8 @@ select::-ms-expand { display: none; }
 
 .sns_list_wrap .sns_list li { float: left; padding: 2px; width: 25%; }
 
+.sns_review_box .sns_list li { width: 50%; }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .sns_list_wrap { display: block; margin-right: 0; margin-left: 0; }
   .sns_list_wrap .sns_list li { margin-left: 20px; padding: 0; width: calc(100% - 40px); }
   .sns_list_wrap .sns_list li:first-child { border-top: 1px solid #ddd; }
@@ -299,7 +301,32 @@ select::-ms-expand { display: none; }
 .photo_list_wrap .photo_list li .list_item:hover .btn_more { display: block; font-size: 1.6em; color: #fff; border: 1px solid #8dbb6a; background: #8dbb6a; z-index: 3; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .photo_list_wrap { margin-right: 0; margin-left: 0; padding-right: 20px; padding-left: 20px; }
-  .photo_list_wrap .photo_list li { width: 100%; padding: 5px 0; } }
+  .photo_list_wrap .photo_list li { width: 100%; padding: 10px 0; } }
+
+.video_list_wrap { position: relative; margin-right: -15px; margin-left: -15px; width: 100%; }
+
+.video_list_wrap .video_list li { float: left; padding: 15px; width: 33.33%; }
+
+.video_list_wrap .video_list li .list_item { position: relative; width: 100%; }
+
+.video_list_wrap .video_list li .list_item:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 40px; background-color: transparent; background-color: black; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#222',endColorstr='#222'); zoom: 1; z-index: 1; }
+
+.video_list_wrap .video_list li .list_item .item_thumb { position: relative; width: 100%; height: 290px; line-height: 290px; text-align: center; overflow: hidden; }
+
+.video_list_wrap .video_list li .list_item .item_thumb img { max-width: unset; height: 100%; }
+
+.video_list_wrap .video_list li .list_item .item_subtitle { position: absolute; bottom: 0; left: 0; padding: 5px 15px; width: 100%; font-size: 1.8em; color: #fff; text-align: center; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; background-color: transparent; background-color: black; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#222',endColorstr='#222'); zoom: 1; }
+
+.video_list_wrap .video_list li .list_item .btn_more { display: none; position: absolute; top: 50%; left: 50%; margin-top: -27px; margin-left: -21px; width: 42px; height: 54px; text-indent: -5000px; font-size: 0; background: url("../images/common/icon_play.png") no-repeat 50%; }
+
+.video_list_wrap .video_list li .list_item:hover .item_thumb:after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: transparent; background-color: rgba(0, 0, 0, 0.6); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#222',endColorstr='#222'); zoom: 1; z-index: 2; }
+
+.video_list_wrap .video_list li .list_item:hover .item_subtitle { color: #222; }
+
+.video_list_wrap .video_list li .list_item:hover .btn_more { display: block; z-index: 3; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .video_list_wrap { margin-right: 0; margin-left: 0; padding-right: 20px; padding-left: 20px; }
+  .video_list_wrap .video_list li { width: 100%; padding: 10px 0; } }
 
 .view_wrap { width: 100%; }
 
@@ -342,7 +369,7 @@ select::-ms-expand { display: none; }
 .view_wrap .view_footer.btn_wrap .btn_arrow_view .btn_next_view_info { float: left; padding-right: 20px; text-align: right; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .view_wrap { padding-right: 20px; padding-left: 20px; }
-  .view_wrap .view_subject { font-size: 2.4em; }
+  .view_wrap .view_subject { font-size: 2.4em; line-height: initial; }
   .view_wrap .view_head .event_period { line-height: 30px; padding-left: 0; }
   .view_wrap .view_head .event_period:before { display: none; }
   .view_wrap .view_body { padding-top: 30px; padding-bottom: 30px; }
@@ -599,6 +626,10 @@ select::-ms-expand { display: none; }
 
 .point_clr2 { color: #57823a !important; }
 
+.youtube_area { position: relative; max-width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+
+.youtube_area iframe, .youtube_area object, .youtube_area embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
 /* content e ================================================ */
 /* ---------------------------------------------------------- */
 /* ---------------------------------------------------------- */
@@ -684,13 +715,33 @@ select::-ms-expand { display: none; }
   .post_list_wrap .swiper-post-button-prev { margin-top: 0; top: unset; left: 50%; bottom: 0; margin-left: 111px; } }
 
 /* sns리뷰 */
-.sns_review_wrap { position: relative; padding-bottom: 60px; width: 100%; background: url("../images/main/sns_review_bg.jpg") 50% 30%; }
+.sns_review_wrap { position: relative; float: left; padding-bottom: 60px; width: 100%; background: url("../images/main/sns_review_bg.jpg") 50% 30%; }
 
-.sns_review_wrap h3 { background: url("../images/main/line_main_title_bg_b.gif") no-repeat 50% 100%; }
+.sns_review_wrap h3 { background: url("../images/main/line_main_title_bg_b.gif") no-repeat 50% 100%; background-size: 400px; }
 
 .sns_review_wrap .btn_wrap { margin-bottom: 20px; text-align: center; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .sns_review_wrap { padding-bottom: 0; background: none; } }
+
+.sns_review_wrap .sns_review_box { margin-left: 2%; }
+
+.sns_review_wrap .video_zone_box, .sns_review_wrap .sns_review_box { float: left; width: 49%; }
+
+.sns_review_wrap .video_zone_box h3, .sns_review_wrap .sns_review_box h3 { position: relative; }
+
+.sns_review_wrap .video_zone_box h3:after, .sns_review_wrap .sns_review_box h3:after { content: url("../images/common/icon_plus_b.png"); position: absolute; top: 50%; left: 50%; display: inline-block; margin-top: 18px; margin-left: 115px; width: 30px; height: 30px; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .sns_review_wrap .video_zone_box h3:after, .sns_review_wrap .sns_review_box h3:after { content: url("../images/common/icon_plus_b_m.png"); margin-top: 0px; margin-left: 95px; width: 23px; height: 22px; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .sns_review_wrap .video_zone_box, .sns_review_wrap .sns_review_box { margin-left: 0; width: 100%; } }
+
+.sns_review_wrap .video_zone_box .main_subtitle { margin-bottom: 33px; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .sns_review_wrap .video_zone_box { padding-right: 20px; padding-left: 20px; } }
+
+.sns_review_wrap .youtube_area { margin-top: 2px; height: 357px; background: #333; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .sns_review_wrap .youtube_area { margin: 0; height: unset; } }
 
 /* location */
 .location_wrap { position: relative; float: left; padding-bottom: 80px; clear: both; width: 100%; }
@@ -784,6 +835,8 @@ select::-ms-expand { display: none; }
   .subpg_contents img { width: 100%; } }
 
 .pg_introduce .subpg_contents { font-size: 2em; text-align: center; }
+
+.pg_introduce .subpg_contents img:nth-child(1) { margin-bottom: 30px; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .pg_introduce .subpg_contents { padding-bottom: 0; font-size: 1.8em; }
   .pg_introduce .subpg_contents > p { padding-right: 20px; padding-left: 20px; line-height: 28px; } }
@@ -895,7 +948,7 @@ select::-ms-expand { display: none; }
 
 .direction_info { float: left; clear: both; margin-top: 40px; width: 100%; }
 
-.direction_info li .direc_item .dii_tit, .direction_info li .direc_item .dii_con { float: left; padding-top: 30px; padding-bottom: 30px; height: 80px; line-height: initial; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+.direction_info li .direc_item .dii_tit, .direction_info li .direc_item .dii_con { float: left; padding-top: 30px; padding-bottom: 30px; height: 80px; line-height: 18px; line-height: initial; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
 
 .direction_info li .direc_item .dii_tit { width: 25%; padding-left: 85px; font-size: 1.8em; }
 

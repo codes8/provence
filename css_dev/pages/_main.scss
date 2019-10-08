@@ -243,11 +243,13 @@
 /* sns리뷰 */
 .sns_review_wrap {
   position:relative;
+  float:left;
   padding-bottom:60px;
   width:100%;
   background:url('#{$img_url}#{$img_main_url}sns_review_bg.jpg') 50% 30%;
   h3 {
     background:url("#{$img_url}#{$img_main_url}line_main_title_bg_b.gif")no-repeat 50% 100%;
+    background-size:400px;
   }
   .btn_wrap {
     margin-bottom:20px;
@@ -256,6 +258,54 @@
   @include media-screen {
     padding-bottom:0;
     background:none;
+  }
+  .sns_review_box {
+    margin-left:2%
+  }
+  .video_zone_box,
+  .sns_review_box {
+    float:left;
+    width:49%;
+    h3 {
+      position:relative;
+      &:after {
+        content:url('#{$img_url}#{$img_common_url}icon_plus_b.png');
+        @include posa_tl(50%,50%);
+        display:inline-block;
+        margin-top:18px;
+        margin-left:115px;
+        width:30px;
+        height:30px;
+        @include media-screen {
+          content:url('#{$img_url}#{$img_common_url}icon_plus_b_m.png');
+          margin-top:0px;
+          margin-left:95px;
+          width:23px;
+          height:22px;
+        }
+      }
+    }
+    @include media-screen {
+      margin-left:0;
+      width:100%;
+    }
+  }
+  .video_zone_box {
+    .main_subtitle {
+      margin-bottom:33px;
+    }
+    @include media-screen {
+      @include setMoDfPadding();
+    }
+  }
+  .youtube_area {
+    margin-top:2px;
+    height:357px;
+    background:#333;
+    @include media-screen {
+      margin:0;
+      height:unset;
+    }
   }
 }
 

@@ -27,6 +27,15 @@
       float:left;
       padding:2px;
       width:25%;
+      @at-root(without:all) {
+      	.sns_review_box {
+      		.sns_list {
+      			li {
+      				width:50%;		
+      			}
+      		}
+      	}
+      }
     }
   }
   @include media-screen {
@@ -640,11 +649,105 @@
 		.photo_list {
 			li {
 				width:100%;
-				padding:5px 0;
+				padding:10px 0;
 			}
 		}
   }
 }
+
+//video_list
+.video_list_wrap {
+	position:relative;
+	margin-right:-15px;
+	margin-left:-15px;
+	width:100%;
+	.video_list {
+		li {
+			float:left;
+			padding:15px;
+			width:33.33%;
+			.list_item {
+		    position:relative;
+		    width:100%;
+		    &:before {
+		    	content:'';
+		    	@include posa_tl(0,0);
+		      width:100%;
+		      height:40px;
+		      @include box-rgba(0,0,0,1,$black);
+		      z-index:1;
+		    }
+		    .item_thumb {
+		      position:relative;
+		      width:100%;
+		      height:290px;
+		      line-height:290px;
+		      text-align:center;
+		      overflow:hidden;
+					img {
+						max-width:unset;
+						height:100%;
+					}
+		    }
+		    .item_subtitle {
+		    	@include posa_bl(0,0);
+		      padding:5px 15px;
+		      width:100%;
+		      font-size:1.8em;
+		      color:#fff;
+		      text-align:center;
+		      @include ellipsis();
+		      @include box-rgba(0,0,0,1,$black);
+		    }
+		    .btn_more {
+		    	display:none;
+		      @include posa_tl(50%,50%);
+		      margin-top:-27px;
+		      margin-left:-21px;
+		      width:42px;
+		      height:54px;
+		      @include txt_idt();
+		      background:url("#{$img_url}#{$img_common_url}icon_play.png") no-repeat 50%;
+		      &:hover {
+		      }
+		    }
+		    &:hover {
+		    	.item_thumb {
+		        &:after {
+		          content:'';
+		          @include posa_tl(0,0);
+		          width:100%;
+		          height:100%;
+		          //border:8px solid $point_clr;
+		          @include box-rgba(0,0,0,0.6,$black);
+		          z-index:2;
+		        }
+		      }
+		      .item_subtitle {
+		      	color:$black;
+		      }
+	        .btn_more {
+	        	display:block;
+	          z-index:3;
+	        }
+	      }
+		    
+		  }
+		}
+	}
+	@include media-screen {
+		margin-right:0;
+		margin-left:0;
+		@include setMoDfPadding();
+		.video_list {
+			li {
+				width:100%;
+				padding:10px 0;
+			}
+		}
+  }
+}
+
 //view
 .view_wrap {
 	width:100%;
@@ -755,6 +858,7 @@
 		@include setMoDfPadding();
 		.view_subject {
 			font-size:2.4em;
+			line-height:initial;
 		}
 		.view_head {
 			.event_period {

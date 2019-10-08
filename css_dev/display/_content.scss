@@ -347,5 +347,30 @@
 .point_clr2 {
   color:$point_clr2 !important;
 }
+
+//youtube 
+.youtube_area {
+}
+
+.youtube_area {
+  position:relative;
+  max-width:100%;
+  padding-bottom:56.25%;
+  height:0;
+  overflow:hidden;
+  iframe,
+  object,
+  embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+}
+.youtube_area iframe, 
+.youtube_area object, 
+.youtube_area embed {  }
+
 /* content e ================================================ */
 /* ---------------------------------------------------------- */
