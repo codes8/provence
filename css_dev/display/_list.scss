@@ -738,7 +738,7 @@
 	@include media-screen {
 		margin-right:0;
 		margin-left:0;
-		@include setMoDfPadding();
+		//@include setMoDfPadding();
 		.video_list {
 			li {
 				width:100%;

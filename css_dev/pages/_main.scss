@@ -88,6 +88,9 @@
       font-weight:$fwL;
       font-size:3.6em;
       text-align:center;
+      b {
+        font-weight::$fwL;
+      }
     }
     p {
       padding-top:10px;
