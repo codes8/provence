@@ -162,8 +162,8 @@
 }
 @mixin media-screen {
 	 @media only screen 
-	 	and (min-device-width:$w_min)
-		and (max-device-width:$w_tab) {
+	 	and (min-width:$w_min)
+		and (max-width:$w_tab) {
 			@content;
 		}
 }

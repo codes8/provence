@@ -16,7 +16,7 @@
 /* buttons s ================================================ */
 .btn_wrap .btn { display: inline-block; font-size: 1.6em; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .btn_wrap .btn { font-size: 1.4em; } }
+@media only screen and (min-width: 320px) and (max-width: 768px) { .btn_wrap .btn { font-size: 1.4em; } }
 
 .btn_full { width: 100%; text-align: center; }
 
@@ -36,7 +36,7 @@
 
 .btn_dot_square:hover:before { content: url("../images/pages/icon_list_btn_green.png"); }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .btn_dot_square { padding: 12px 37px 12px 60px; } }
+@media only screen and (min-width: 320px) and (max-width: 768px) { .btn_dot_square { padding: 12px 37px 12px 60px; } }
 
 .btn_arrow_view .btn_arrow_square_l, .btn_arrow_view .btn_arrow_square_r { width: 57px; height: 57px; border: 1px solid #ddd; }
 
@@ -50,7 +50,7 @@
 
 .btn_arrow_view .btn_arrow_square_r:hover { border: 1px solid #57823a; background: url("../images/pages/icon_arrow_viewbtn_r_over.png") no-repeat 50%; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .btn_arrow_view .btn_arrow_square_l, .btn_arrow_view .btn_arrow_square_r { width: 45px; height: 45px; } }
+@media only screen and (min-width: 320px) and (max-width: 768px) { .btn_arrow_view .btn_arrow_square_l, .btn_arrow_view .btn_arrow_square_r { width: 45px; height: 45px; } }
 
 .efc_btn_1 { position: relative; overflow: hidden; }
 
@@ -66,7 +66,7 @@
 
 .top_btn { position: absolute; bottom: 200px; right: 20px; position: fixed; display: block; width: 50px; height: 50px; background-color: #333; z-index: -1; overflow: hidden; opacity: 0; -webkit-transform: translateY(0); -khtml-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); -webkit-transition: all 0.3s ease-in-out; -khtml-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .top_btn { bottom: 20px; } }
+@media only screen and (min-width: 320px) and (max-width: 768px) { .top_btn { bottom: 20px; } }
 
 .top_btn.active { z-index: 999; opacity: 1; }
 
@@ -84,7 +84,7 @@
 
 .view_table th { background: #eee; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .responsive_table { /* Force table to not be like tables anymore */ /* Hide table headers (but not display: none;, for accessibility) */ /* Label the data You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow. */ }
+@media only screen and (min-width: 320px) and (max-width: 768px) { .responsive_table { /* Force table to not be like tables anymore */ /* Hide table headers (but not display: none;, for accessibility) */ /* Label the data You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow. */ }
   .responsive_table table, .responsive_table thead, .responsive_table tbody, .responsive_table th, .responsive_table td, .responsive_table tr { display: block; }
   .responsive_table thead tr { position: absolute; top: -9999px; left: -9999px; }
   .responsive_table tr:nth-child(odd) { background: #ddd; }
@@ -109,19 +109,19 @@
 
 .markup_list_wrap .markup_list_top { position: relative; padding: 10px 0; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .markup_list_wrap .markup_list_top { position: fixed; top: 0; left: 0; padding: 0 10px; width: 100%; height: 75px; background: #fff; z-index: 1; border-bottom: 1px solid #f1f1f1; } }
+@media only screen and (min-width: 320px) and (max-width: 768px) { .markup_list_wrap .markup_list_top { position: fixed; top: 0; left: 0; padding: 0 10px; width: 100%; height: 75px; background: #fff; z-index: 1; border-bottom: 1px solid #f1f1f1; } }
 
 .markup_list_wrap .markup_list_top h1 { float: left; margin-top: 25px; color: #333; font-weight: 800; font-size: 34px; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .markup_list_wrap .markup_list_top h1 { float: right; font-size: 24px; } }
+@media only screen and (min-width: 320px) and (max-width: 768px) { .markup_list_wrap .markup_list_top h1 { float: right; font-size: 24px; } }
 
 .markup_list_wrap .markup_list_top img { position: absolute; top: 20px; left: 50%; margin-left: -83px; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .markup_list_wrap .markup_list_top img { top: 10px; left: 10px; margin-left: 0; } }
+@media only screen and (min-width: 320px) and (max-width: 768px) { .markup_list_wrap .markup_list_top img { top: 10px; left: 10px; margin-left: 0; } }
 
 .markup_list_wrap .markup_list_mid { padding-bottom: 40px; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .markup_list_wrap .markup_list_mid { padding-top: 70px; } }
+@media only screen and (min-width: 320px) and (max-width: 768px) { .markup_list_wrap .markup_list_mid { padding-top: 70px; } }
 
 .markup_list_wrap .markup_list_btm { position: absolute; left: 0; bottom: 0; padding: 20px 0 18px; width: 100%; font-weight: 300; font-size: 14px; color: #eee; text-align: center; background: #333; }
 
@@ -173,7 +173,7 @@
 
 .markup_list_table .pg_url { text-align: left; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) { .markup_list_table td, .markup_list_table td:before { text-align: left; }
+@media only screen and (min-width: 320px) and (max-width: 768px) { .markup_list_table td, .markup_list_table td:before { text-align: left; }
   .markup_list_table td:nth-of-type(1):before { content: "No."; }
   .markup_list_table td:nth-of-type(2):before { content: "Depth 1"; }
   .markup_list_table td:nth-of-type(3):before { content: "Depth 2"; }
