@@ -19,6 +19,11 @@ body {
 	}
 }
 
+.container {
+	width:100%;
+	overflow-x:hidden;
+}
+
 .grid_wrap {
 	margin:0 auto;
 	width:$mid_wrap_w;
